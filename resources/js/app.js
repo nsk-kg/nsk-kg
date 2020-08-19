@@ -3,13 +3,15 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
+import 'vue-search-select/dist/VueSearchSelect.css'
 require('./bootstrap');
 
 window.Vue = require('vue');
 
 import { BootstrapVue, IconsPlugin, OverlayPlugin, NavbarPlugin  } from 'bootstrap-vue'
+import VueTheMask from 'vue-the-mask'
 
+Vue.use(VueTheMask)
 Vue.use(NavbarPlugin)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
@@ -25,6 +27,7 @@ Vue.use(OverlayPlugin)
 Vue.component('swipper-component', require('./components/SwipperComponent.vue').default);
 Vue.component('swipper-sm-component', require('./components/SwipperSmComponent.vue').default);
 Vue.component('swipper-work-component', require('./components/SwipperWorkComponent.vue').default);
+Vue.component('osgop-component', require('./components/OsgopComponent.vue').default);
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 

@@ -33,3 +33,7 @@ Route::get('/savepersontravel', 'HomeController@savepersontravel')->name('savepe
 Route::get('/medic', 'HomeController@medic')->name('medic');
 Route::get('/ns', 'HomeController@ns')->name('ns');
 Route::get('/savehome', 'HomeController@savehome')->name('savehome');
+
+Route::get('/calculators/osgop/', 'CalculatorController@osgop')->name('osgop');
+
+Route::get(config('laravel_pages.view_pages_route'), '\Appoly\LaravelPages\Http\Controllers\PagesController@show')->name('laravel-pages.show');

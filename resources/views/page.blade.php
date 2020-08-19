@@ -5,19 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'www.nsk.kg') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <style>
-        @font-face {
-            font-family: OptimusPrinceps;
-            src: url('font/K_Avante-Regular.ttf');
-        }
-
         body {
-            font-family: OptimusPrinceps;
+            font-family: MuseoSansCyrl-100, Helvetica, Arial, sans-serif;
         }
-
 
         .hovereffect {
             width: 90%;
@@ -142,15 +136,8 @@
                         <a class="dropdown-item" href="#"> Работников от несчастных случаев</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Калькуляторы
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/calculators/osgop">Ответственность работодателя</a>
-                        <a class="dropdown-item" href="/calculators/osgpp">Перевозчик перед пассажирами</a>
-                    </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/contact">Калькуляторы<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="/contact">Контакты<span class="sr-only">(current)</span></a>
@@ -194,7 +181,9 @@
     </nav>
 </div>
 
-    @yield('content')
+<div class="page-content">
+    {!! $page->body !!}
+</div>
 
 <!-- Footer -->
 <footer class="page-footer font-small indigo mt-5">
