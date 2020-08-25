@@ -149,7 +149,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/calculators/osgop">Ответственность работодателя</a>
-                        <a class="dropdown-item" href="/calculators/osgpp">Перевозчик перед пассажирами</a>
+                        <a class="dropdown-item" href="/calculators/osgpopp">Перевозчик перед пассажирами</a>
                     </div>
                 </li>
                 <li class="nav-item active">

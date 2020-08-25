@@ -35,5 +35,6 @@ Route::get('/ns', 'HomeController@ns')->name('ns');
 Route::get('/savehome', 'HomeController@savehome')->name('savehome');
 
 Route::get('/calculators/osgop/', 'CalculatorController@osgop')->name('osgop');
+Route::get('/calculators/osgpopp/', 'CalculatorController@osgpopp')->name('osgpopp');
 
 Route::get(config('laravel_pages.view_pages_route'), '\Appoly\LaravelPages\Http\Controllers\PagesController@show')->name('laravel-pages.show');
