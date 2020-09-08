@@ -35,6 +35,7 @@ Route::get('/ns', 'HomeController@ns')->name('ns');
 Route::get('/savehome', 'HomeController@savehome')->name('savehome');
 
 Route::get('/calculators/osgop/', 'CalculatorController@osgop')->name('osgop');
+Route::get('/calculators/osopo/', 'CalculatorController@osopo')->name('osopo');
 Route::get('/calculators/osgopog/', 'CalculatorController@osgopog')->name('osgopog');
 Route::get('/calculators/osgpopp/', 'CalculatorController@osgpopp')->name('osgpopp');
 

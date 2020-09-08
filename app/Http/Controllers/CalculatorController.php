@@ -24,5 +24,9 @@ class CalculatorController extends Controller
     {
         return view('calculator.osgopog');
     }
+    public function osopo()
+    {
+        return view('calculator.osopo');
+    }
 
 }

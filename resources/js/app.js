@@ -28,6 +28,7 @@ Vue.component('swipper-component', require('./components/SwipperComponent.vue').
 Vue.component('swipper-sm-component', require('./components/SwipperSmComponent.vue').default);
 Vue.component('swipper-work-component', require('./components/SwipperWorkComponent.vue').default);
 Vue.component('osgopog-component', require('./components/OsgopogComponent.vue').default);
+Vue.component('osopo-component', require('./components/OsopoComponent.vue').default);
 Vue.component('osgop-component', require('./components/OsgopComponent.vue').default);
 Vue.component('osgpopp-component', require('./components/OsgpoppComponent.vue').default);
 // const files = require.context('./', true, /\.vue$/i)
