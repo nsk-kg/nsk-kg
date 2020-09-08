@@ -149,6 +149,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/calculators/osgop">Ответственность работодателя</a>
+                        <a class="dropdown-item" href="/calculators/osgopog">Обязательное страхование гражданской ответственности перевозчика опасных грузов</a>
                         <a class="dropdown-item" href="/calculators/osgpopp">Перевозчик перед пассажирами</a>
                     </div>
                 </li>

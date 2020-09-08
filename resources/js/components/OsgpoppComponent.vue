@@ -70,7 +70,7 @@
             calculation: function () {
 
                var t = (310.000*this.count)*0.045*this.tipAuto*this.tipPer*10
-console.log(t)
+
                 // var adm = this.administrator * 0.03 * this.selectedFond * this.selectedPeriod;
                 // var vspom = this.personal * 0.12 * this.selectedFond * this.selectedPeriod;
                 // var proiz = this.proizvodstvo * 0.47 * this.selectedFond * this.selectedPeriod;

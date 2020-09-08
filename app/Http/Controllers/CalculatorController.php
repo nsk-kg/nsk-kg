@@ -20,5 +20,9 @@ class CalculatorController extends Controller
     {
         return view('calculator.osgpopp');
     }
+    public function osgopog()
+    {
+        return view('calculator.osgopog');
+    }
 
 }
