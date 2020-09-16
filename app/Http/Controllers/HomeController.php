@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\EnsuranseModel;
+use App\Http\Requests\EnsuransRequest;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -66,5 +68,31 @@ class HomeController extends Controller
     public function savehome()
     {
         return view('savehome');
+    }
+    public function ensuranse()
+    {
+        return view('calculator.ensuranse');
+    }
+    public function ensuranseCreate(EnsuransRequest $request)
+    {
+        $path = '';
+        if ($request->file('image')) {
+            $path = $request->file('image')->store('image');
+        }
+        $request->file = $path;
+
+       EnsuranseModel::create(
+           [
+               'firstName'=>$request->firstName,
+               'MidleName'=>$request->MidleName,
+               'product'=>$request->product,
+               'polis'=>$request->polis,
+               'telephone'=>$request->telephone,
+               'status'=>'0',
+               'image'=>$path,
+           ]
+       );
+
+
     }
 }

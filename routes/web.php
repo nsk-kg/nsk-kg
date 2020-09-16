@@ -34,6 +34,10 @@ Route::get('/medic', 'HomeController@medic')->name('medic');
 Route::get('/ns', 'HomeController@ns')->name('ns');
 Route::get('/savehome', 'HomeController@savehome')->name('savehome');
 
+Route::get('/ensuranse', 'HomeController@ensuranse')->name('ensuranse');
+Route::post('/ensuranse/create', 'HomeController@ensuranseCreate')->name('ensuranseCreate');
+
+
 Route::get('/calculators/osgop/', 'CalculatorController@osgop')->name('osgop');
 Route::get('/calculators/osopo/', 'CalculatorController@osopo')->name('osopo');
 Route::get('/calculators/osgopog/', 'CalculatorController@osgopog')->name('osgopog');
