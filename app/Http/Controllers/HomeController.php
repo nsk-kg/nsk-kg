@@ -131,7 +131,9 @@ class HomeController extends Controller
 
         $data = '';
         foreach ($request->all() as $key => $value) {
-            $data .= $key.': '.$value.':';
+            if($key != 'type' AND $key != 'sum' AND $key != 'phone'){
+                $data .= $key.': '.$value.'<br>';
+            }
         }
         $requestModel = new RequestModel();
         $requestModel->type = $request->get('type');

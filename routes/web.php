@@ -24,6 +24,7 @@ Auth::routes();
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/cabinet', 'CabinetController@index')->name('cabinet');
 
 Route::post('/story', 'HomeController@story')->name('story');
 Route::post('/recaptcha', 'HomeController@recaptcha')->name('recaptcha');
