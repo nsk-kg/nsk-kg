@@ -24,6 +24,10 @@ Auth::routes();
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/story', 'HomeController@story')->name('story');
+Route::post('/recaptcha', 'HomeController@recaptcha')->name('recaptcha');
+
 Route::get('/company', 'HomeController@company')->name('company');
 Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::get('/kasko', 'HomeController@kasko')->name('kasko');

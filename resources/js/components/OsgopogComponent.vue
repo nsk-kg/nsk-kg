@@ -13,7 +13,7 @@
                 <div class="row mt-3">
                     <div class="col-12">
                         <label>Ваш номер телефона</label>
-                        <the-mask :mask="['+### ### ### ###']" class="form-control" placeholder=""/>
+                        <the-mask :mask="['+### ### ### ###']" class="form-control" placeholder="" v-model="phone" />
 
                     </div>
                 </div>
@@ -195,7 +195,7 @@
             }
         },
         methods: {
-            calculation: function () {
+            calculation: async function () {
                 console.log('period '+this.selectedPeriod)
                 console.log('risk '+this.selectedRisk)
                 console.log('ves '+this.selectedFond)
@@ -207,9 +207,20 @@
                 console.log(summ )
                 console.log(period[0].value)
 
+                const data = {};
+
                 this.som = summ * 1 * period[0].value
                 this.som = parseFloat(this.som).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ")
 
+
+                Object.assign(data, {'sum': this.som})
+                Object.assign(data, {'type': 'osgopog'})
+                Object.assign(data, {'phone': this.phone})
+                Object.assign(data, {'Класс риска': ves[0].value[this.selectedRisk] })
+                Object.assign(data, {'Вес': this.selectedFond})
+                Object.assign(data, {'Период': period[0].text})
+
+                await axios.post(process.env.MIX_HTTP + window.location.hostname + '/story', data);
             }
         },
         mounted() {

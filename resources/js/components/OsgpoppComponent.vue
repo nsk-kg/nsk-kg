@@ -5,7 +5,7 @@
             <div class="row mt-3">
                 <div class="col-12">
                     <label>Ваш номер телефона</label>
-                    <the-mask :mask="['+### ### ### ###']" class="form-control" placeholder=""/>
+                    <the-mask :mask="['+### ### ### ###']" class="form-control" placeholder="" v-model="phone" />
                 </div>
             </div>
             <div class="row mt-3">
@@ -67,7 +67,7 @@
             console.log('Component mounted.')
         },
         methods: {
-            calculation: function () {
+            calculation: async function () {
 
                var t = (310.000*this.count)*0.045*this.tipAuto*this.tipPer*10
 
@@ -78,6 +78,16 @@
                 var n = parseFloat(t).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ");
 
                 this.som = n ;
+                const data = {};
+                Object.assign(data, {'sum': this.som})
+                Object.assign(data, {'type': 'osgpopp'})
+                Object.assign(data, {'phone': this.phone})
+                Object.assign(data, {'Количество мест': this.count })
+                Object.assign(data, {'Выберите тип вашего автотранспорта:': this.tipAuto })
+                Object.assign(data, {'Тип перевозки:': this.tipPer })
+
+
+                await axios.post(process.env.MIX_HTTP + window.location.hostname + '/story', data);
             }
         },
     }

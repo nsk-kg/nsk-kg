@@ -5,7 +5,7 @@
             <div class="row mt-3">
                 <div class="col-12">
                     <label>Ваш номер телефона</label>
-                    <the-mask :mask="['+### ### ### ###']" class="form-control" placeholder=""/>
+                    <the-mask :mask="['+### ### ### ###']" class="form-control" placeholder=""v-model="phone" />
                 </div>
             </div>
 
@@ -64,6 +64,7 @@
             return {
                 count: 1,
                 selected: 1,
+                phone:null,
                 objectproSelected: null,
                 tipAuto: null,
                 tipPer: null,
@@ -100,18 +101,32 @@
             console.log('Component mounted.')
         },
         methods: {
-            calculation: function () {
+            calculation: async function () {
                 var summ = 0;
                 if (this.selected == 1) {
                     summ = 0.144*this.objectproSelected/100
+                    var o = 'Нет';
                 }
                 if(this.selected == 2){
                     summ = (0.144*1.5) * this.objectproSelected/100
+                    var o = 'Да';
                 }
 
                 var n = parseFloat(summ).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ");
 
                 this.som = n;
+
+                var tRisk = this.objectpro.filter(x=>x.value === this.objectproSelected)
+
+                const data = {};
+                Object.assign(data, {'sum': this.som})
+                Object.assign(data, {'type': 'osgpopp'})
+                Object.assign(data, {'phone': this.phone})
+                Object.assign(data, {'Типы рисков': tRisk[0].text })
+                Object.assign(data, {'Расположение вблизи населенных пунктов,охраняемых зон, рек, озер и.т.п:': o })
+
+
+                await axios.post(process.env.MIX_HTTP + window.location.hostname + '/story', data);
             }
         },
         components: {

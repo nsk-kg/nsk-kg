@@ -3,7 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\EnsuranseModel;
+use App\Events\CallMe;
+use App\Events\EnsuranseEvent;
+use App\Events\RequestMe;
 use App\Http\Requests\EnsuransRequest;
+use App\Models\RequestUser\RequestUser;
+use App\RequestModel;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -57,22 +63,27 @@ class HomeController extends Controller
     {
         return view('savepersontravel');
     }
+
     public function medic()
     {
         return view('medic');
     }
+
     public function ns()
     {
         return view('ns');
     }
+
     public function savehome()
     {
         return view('savehome');
     }
+
     public function ensuranse()
     {
         return view('calculator.ensuranse');
     }
+
     public function ensuranseCreate(EnsuransRequest $request)
     {
         $path = '';
@@ -81,18 +92,54 @@ class HomeController extends Controller
         }
         $request->file = $path;
 
-       EnsuranseModel::create(
-           [
-               'firstName'=>$request->firstName,
-               'MidleName'=>$request->MidleName,
-               'product'=>$request->product,
-               'polis'=>$request->polis,
-               'telephone'=>$request->telephone,
-               'status'=>'0',
-               'image'=>$path,
-           ]
-       );
+        EnsuranseModel::create(
+            [
+                'firstName' => $request->firstName,
+                'MidleName' => $request->MidleName,
+                'product' => $request->product,
+                'polis' => $request->polis,
+                'telephone' => $request->telephone,
+                'status' => '0',
+                'image' => $path,
+            ]
+        );
+    }
+    public function recaptcha(Request $request)
+    {
+        $client = new Client([
+            'base_uri' => 'https://google.com/recaptcha/api/',
+            'timeout' => 2.0
+        ]);
 
+        $response = $client->request('POST', 'siteverify', [
+            'query' => [
+                'secret' => env('CAPTCHA_SECRET'),
+                'response' => $request->token
+            ]
+        ]);
+        $result = json_decode($response->getBody()->getContents());
+
+        if ($result->success) {
+            return 1;
+        } else {
+            return 0;
+        }
+
+    }
+    public function story(Request $request)
+    {
+
+        $data = '';
+        foreach ($request->all() as $key => $value) {
+            $data .= $key.': '.$value.':';
+        }
+        $requestModel = new RequestModel();
+        $requestModel->type = $request->get('type');
+        $requestModel->data = $data;
+        $requestModel->sum = $request->get('sum');
+        $requestModel->phone = $request->get('phone');
+        $requestModel->status = 0;
+        $requestModel->save();
 
     }
 }

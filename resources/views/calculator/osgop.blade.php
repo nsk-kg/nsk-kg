@@ -10,8 +10,9 @@
            </div>
         </div>
         <div class="row" id="app">
+            <script src='https://www.google.com/recaptcha/api.js' async defer></script>
             <div class="col-12">
-                <osgop-component></osgop-component>
+                <osgop-component csrf="{{csrf_token()}}"></osgop-component>
             </div>
         </div>
     </main>
