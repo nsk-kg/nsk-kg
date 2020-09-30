@@ -218,7 +218,7 @@ export default {
         calculation: async function () {
             var adm = this.administrator * 0.03 * this.selectedFond * this.selectedPeriod;
             var vspom = this.personal * 0.12 * this.selectedFond * this.selectedPeriod;
-            var proiz = this.proizvodstvo * 0.47 * this.selectedFond * this.selectedPeriod;
+            var proiz = this.proizvodstvo * this.selectedRisk * this.selectedFond * this.selectedPeriod;
 
             var som = (adm + vspom + proiz) / 10000;
             var n = parseFloat(som).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ");
