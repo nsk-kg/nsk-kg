@@ -210,8 +210,8 @@
                 const data = {};
                 var per = period[0].value/100
                 console.log(per)
-                this.som = summ * 0.01 * per * 10
-                this.som = parseFloat(this.som).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ")
+                this.som = summ * 0.01 * per
+                // this.som = parseFloat(this.som).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ")
 
 
                 Object.assign(data, {'sum': this.som})
