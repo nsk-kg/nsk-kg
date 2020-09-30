@@ -168,14 +168,14 @@
                     {text:'Класс 9 - прочие опасные вещества',value:'9'}
                 ],
                 fond: [
-                    {value: '2.5', text: '2.5'},
-                    {value: '5', text: '5'},
-                    {value: '7.5', text: '7.5'},
-                    {value: '10', text: '10'},
-                    {value: '12.5', text: '12.5'},
-                    {value: '15', text: '15'},
-                    {value: '20', text: '20'},
-                    {value: '100', text: '100'},
+                    {value: 'до 2.5 тонн', text: '2.5'},
+                    {value: 'до 5 тонн', text: '5'},
+                    {value: 'до 7.5 тонн', text: '7.5'},
+                    {value: 'до 10 тонн', text: '10'},
+                    {value: 'до 12.5 тонн', text: '12.5'},
+                    {value: 'до 15 тонн', text: '15'},
+                    {value: 'до 20 тонн', text: '20'},
+                    {value: 'Свыше 20 тонн', text: '100'},
                 ],
                 period: [
                     {text: 'до 15 дней включительно', value: '10'},
@@ -211,8 +211,6 @@
                 var per = period[0].value/100
                 console.log(per)
                 this.som = summ * 0.01 * per
-                // this.som = parseFloat(this.som).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ")
-
 
                 Object.assign(data, {'sum': this.som})
                 Object.assign(data, {'type': 'osgopog'})
