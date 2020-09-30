@@ -70,18 +70,18 @@
                             </model-select>
                         </div>
                     </div>
-                    <div class="row mt-2">
-                        <div class="col-12">
-                            <label>Captcha</label>
-                            <form @submit.prevent="onSubmit">
-                                <vue-recaptcha
-                                    ref="invisibleRecaptcha"
-                                    @verify="onVerify"
-                                    sitekey="6LfcvSgTAAAAAOmxZDHc60aBnIFvNDEKYZXLCFV1">
-                                </vue-recaptcha>
-                            </form>
-                        </div>
-                    </div>
+<!--                    <div class="row mt-2">-->
+<!--                        <div class="col-12">-->
+<!--                            <label>Captcha</label>-->
+<!--                            <form @submit.prevent="onSubmit">-->
+<!--                                <vue-recaptcha-->
+<!--                                    ref="invisibleRecaptcha"-->
+<!--                                    @verify="onVerify"-->
+<!--                                    sitekey="6LfcvSgTAAAAAOmxZDHc60aBnIFvNDEKYZXLCFV1">-->
+<!--                                </vue-recaptcha>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
 
 
@@ -99,8 +99,8 @@
                         <div class="row">
                             <div class="col-12">
 
-                                <a href="#" v-if="recaptchas" class="btn btn-primary btn-lg" value="Расчитать" @click="resets">Сброс формы
-                                </a>
+                                <span  class="btn btn-primary btn-lg" value="Расчитать" @click="calculation">Расчет
+                                </span>
                             </div>
                         </div>
                     </div>

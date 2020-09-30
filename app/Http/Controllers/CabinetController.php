@@ -37,6 +37,17 @@ class CabinetController extends Controller
 
         return view('cabinet.index',['model'=>$model]);
     }
+    public function life()
+    {
+
+        $model = DB::table('ensuranse')->paginate(10);
+
+        return view('cabinet.life',['model'=>$model]);
+    }
+    public function document($id)
+    {
+
+    }
 
 
 }
