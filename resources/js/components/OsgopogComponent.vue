@@ -209,7 +209,7 @@
 
                 const data = {};
 
-                this.som = summ * 1 * period[0].value
+                this.som = summ * 0.01 * period[0].value
                 this.som = parseFloat(this.som).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ")
 
 
