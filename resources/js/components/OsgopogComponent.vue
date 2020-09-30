@@ -196,20 +196,21 @@
         },
         methods: {
             calculation: async function () {
-                console.log('period '+this.selectedPeriod)
-                console.log('risk '+this.selectedRisk)
-                console.log('ves '+this.selectedFond)
+                // console.log('period '+this.selectedPeriod)
+                // console.log('risk '+this.selectedRisk)
+                // console.log('ves '+this.selectedFond)
 
                 var ves = this.classRisk.filter(x => x.text == this.selectedFond)
                 var summ = ves[0].value[this.selectedRisk]
                 var period = this.period.filter(x=> x.value == this.selectedPeriod)
 
-                console.log(summ )
-                console.log(period[0].value)
+                // console.log(summ)
+                // console.log(period[0].value)
 
                 const data = {};
-
-                this.som = summ * 0.01 * (period[0].value/100)
+                var per = period[0].value/100
+                console.log(per)
+                this.som = summ * 0.01 * per * 10
                 this.som = parseFloat(this.som).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1 ")
 
 
