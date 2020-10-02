@@ -165,7 +165,7 @@
 
                 <div class="row pt-3" style="">
                     <div class="col-3 text-center">
-                        <h1>12</h1>
+                        <h1>13</h1>
                         <p class="card-text">лет Надежной работы</p>
                     </div>
                     <div class="col-3 text-center">
@@ -191,13 +191,16 @@
              style="background-image:url('/img/12.png');  background-repeat: no-repeat;background-position: right top;height:200px">
             <div class="col-6">
                 <h3 class="p-2 display-5 mt-4">Оформить страховой полис за 15 минут!</h3>
-                <input class="form-control col-5 ml-2" type="text" placeholder="Имя">
-                <input class="form-control col-5 ml-2 mt-2" type="text" placeholder="Ваш номер телефона">
-                <button type="button" class="btn btn-primary  ml-2 mt-2">Отправить сообщение</button>
+                <form action="{{route('storyMessage')}}" method="post">
+                    {{csrf_field()}}
+                    <input class="form-control col-5 ml-2" type="text" placeholder="Имя" name="name" required>
+                    <input class="form-control col-5 ml-2 mt-2" type="text" placeholder="Ваш номер телефона" name="phone" required>
+                    <input type="submit" class="btn btn-primary  ml-2 mt-2" value="Отправить сообщение">
+                </form>
             </div>
             <div class="col-4 text-left ">
                 <h2 class="mt-4 p-2 display-5">
-                    <img src="/img/phone.svg" width="40px" height="40px"> 8 8000 800 800
+                    <img src="/img/phone.svg" width="40px" height="40px"> +996 312 888 180
                 </h2>
             </div>
         </div>

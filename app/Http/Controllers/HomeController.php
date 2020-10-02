@@ -144,4 +144,17 @@ class HomeController extends Controller
         $requestModel->save();
 
     }
+    public function storyMessage(Request $request)
+    {
+        if($request->post()){
+            $requestModel = new RequestModel();
+            $requestModel->type = 'message';
+            $requestModel->data = $request->name;
+            $requestModel->sum = 0;
+            $requestModel->phone = $request->phone;
+            $requestModel->status = 0;
+            return view('home');
+        }
+
+    }
 }

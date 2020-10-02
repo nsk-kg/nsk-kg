@@ -29,6 +29,8 @@ Route::get('/cabinet/life', 'CabinetController@life')->name('cabinet.life');
 Route::get('/cabinet/document/{id}', 'CabinetController@document')->name('cabinet.document');
 
 Route::post('/story', 'HomeController@story')->name('story');
+Route::post('/storyMessage', 'HomeController@storyMessage')->name('storyMessage');
+
 Route::post('/recaptcha', 'HomeController@recaptcha')->name('recaptcha');
 
 Route::get('/company', 'HomeController@company')->name('company');
