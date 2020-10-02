@@ -198,11 +198,7 @@
                     <input type="submit" class="btn btn-primary  ml-2 mt-2" value="Отправить сообщение">
                 </form>
             </div>
-            <div class="col-4 text-left ">
-                <h2 class="mt-4 p-2 display-5">
-                    <img src="/img/phone.svg" width="40px" height="40px"> +996 312 888 180
-                </h2>
-            </div>
+
         </div>
 
         <div class="row mt-5 text-center">
