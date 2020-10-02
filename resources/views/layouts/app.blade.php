@@ -155,9 +155,7 @@
                         </a>
                     </div>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/ensuranse">Произошел страховой случай<span class="sr-only">(current)</span></a>
-                </li>
+
                 <li class="nav-item active">
                     <a class="nav-link" href="/contact">Контакты<span class="sr-only">(current)</span></a>
                 </li>
@@ -225,25 +223,25 @@
                         <a href="#">Главная</a>
                     </li>
                     <li>
-                        <a href="#!">О компании</a>
+                        <a href="#">О компании</a>
                     </li>
                     <li>
-                        <a href="#!">Юридическим лицам</a>
+                        <a href="#">Юридическим лицам</a>
                     </li>
                     <li>
-                        <a href="#!">Физическим лицам</a>
+                        <a href="#">Физическим лицам</a>
                     </li>
                     <li>
-                        <a href="#!">Правила страхования</a>
+                        <a href="#">Правила страхования</a>
                     </li>
                     <li>
-                        <a href="#!">Лицензии</a>
+                        <a href="#">Лицензии</a>
                     </li>
                     <li>
-                        <a href="#!">Финансовые показатели</a>
+                        <a href="#">Финансовые показатели</a>
                     </li>
                     <li>
-                        <a href="#!">Контакты</a>
+                        <a href="/contact">Контакты</a>
                     </li>
                 </ul>
 

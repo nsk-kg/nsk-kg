@@ -10,7 +10,7 @@
             <diw class="col-6">
                 <div class="card" style="width: 35rem;">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">ПРОИЗОШЕЛ СТРАХОВОЙ СЛУЧАЙ</a></h5>
+                        <h5 class="card-title"><a href="/ensuranse">ПРОИЗОШЕЛ СТРАХОВОЙ СЛУЧАЙ</a></h5>
                         <p class="card-text">Если с вами произошел страховой случай, то оставьте нам заявку и мы
                             перезвоним вам для уточнения подробностей.</p>
                     </div>
@@ -19,7 +19,7 @@
             <diw class="col-6">
                 <div class="card" style="width: 35rem;">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="">ОФОРМИТЬ СТРАХОВОЙ ПОЛИС</a></h5>
+                        <h5 class="card-title"><a href="/contact">ОФОРМИТЬ СТРАХОВОЙ ПОЛИС</a></h5>
                         <p class="card-text">Вы можете оформить или продлить полис по телефону или посетив один из наших
                             филиалов .</p>
                     </div>
