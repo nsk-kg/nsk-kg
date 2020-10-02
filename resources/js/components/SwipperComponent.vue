@@ -27,7 +27,7 @@
                         </div>
                         <div class="row pt-5 mt-5" style="">
                             <div class="col-3 ">
-                                <button type="button" class="btn btn-light btn-lg btn-block">Здоровье</button>
+                                <a href="/ns" type="button" class="btn btn-light btn-lg btn-block">Здоровье</button>
                             </div>
                             <div class="col-3">
                                 <button type="button" class="btn btn-light btn-lg btn-block p-2">Обязательное
@@ -35,10 +35,10 @@
                                 </button>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light btn-lg btn-block">Авто</button>
+                                <a href="/kasko" type="button" class="btn btn-light btn-lg btn-block">Авто</a>
                             </div>
                             <div class="col-3">
-                                <button type="button" class="btn btn-light btn-lg btn-block ">Имущество</button>
+                                <a href="/savehome" type="button" class="btn btn-light btn-lg btn-block ">Имущество</button>
                             </div>
                         </div>
                     </div>
