@@ -61,7 +61,7 @@
                                     <h5 class="card-title">Страхование здоровья!</h5>
                                     <p class="card-text">Внезапная травма — это серьезная неприятность для взрослого
                                         человека..</p>
-                                    <p class="card-text"><a href="">Подробнее</a></p>
+                                    <p class="card-text"><a href="/ns">Подробнее</a></p>
                                 </div>
                             </div>
 
@@ -71,7 +71,7 @@
                                     <h5 class="card-title">Страхование путешествий</h5>
                                     <p class="card-text">Застрахуйте себя от внезапной болезни, травмы, потери или
                                         повреждения багажа при выезде за рубеж.</p>
-                                    <p class="card-text"><a href="">Подробнее</a></p>
+                                    <p class="card-text"><a href="/savepersontravel">Подробнее</a></p>
                                 </div>
                             </div>
                             <div class="card m-2 border-white shadow rounded hovereffect">
@@ -79,7 +79,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Страхование Авто</h5>
                                     <p class="card-text">Как известно с каждым годом число ДТП на дорогах растет.</p>
-                                    <p class="card-text"><a href="">Подробнее</a></p>
+                                    <p class="card-text"><a href="/kasko">Подробнее</a></p>
                                 </div>
                             </div>
                             <div class="card m-2 border-white shadow rounded hovereffect">
@@ -87,7 +87,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Страхование недвижимости</h5>
                                     <p class="card-text">Моя квартира – основное имущество моей семьи.</p>
-                                    <p class="card-text"><a href="">Подробнее</a></p>
+                                    <p class="card-text"><a href="/savehome">Подробнее</a></p>
                                 </div>
                             </div>
                         </div>

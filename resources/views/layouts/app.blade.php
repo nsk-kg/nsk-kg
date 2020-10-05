@@ -123,23 +123,23 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <div class="pl-3"><b>ОБЯЗАТЕЛЬНОЕ СТРАХОВАНИЕ</b></div>
-                        <a class="dropdown-item" href="#"> Гражданской ответственности работодателя</a>
-                        <a class="dropdown-item" href="#"> Гражданской ответственности перевозчика <br>опасных
+                        <a class="dropdown-item" href="/otwork"> Гражданской ответственности работодателя</a>
+                        <a class="dropdown-item" href="/obsave"> Гражданской ответственности перевозчика <br>опасных
                             грузов</a>
-                        <a class="dropdown-item" href="#"> Гражданской ответственности предприятий <br>источников
+                        <a class="dropdown-item" href="/obot"> Гражданской ответственности предприятий <br>источников
                             повышенной опасности</a>
-                        <a class="dropdown-item" href="#"> Гражданской ответственности перевозчика <br> перед
+                        <a class="dropdown-item" href="/savepep"> Гражданской ответственности перевозчика <br> перед
                             пассажирами</a>
                         <div class="dropdown-divider"></div>
                         <div class="pl-3"><b>ДОБРОВОЛЬНОЕ СТРАХОВАНИЕ</b></div>
-                        <a class="dropdown-item" href="#"> Имущества юридических лиц</a>
-                        <a class="dropdown-item" href="#"> Автотранспорт</a>
-                        <a class="dropdown-item" href="#"> Грузы</a>
+                        <a class="dropdown-item" href="/saveur"> Имущества юридических лиц</a>
+                        <a class="dropdown-item" href="/autour"> Автотранспорт</a>
+                        <a class="dropdown-item" href="/gruz"> Грузы</a>
                         <a class="dropdown-item" href="#"> Медицинское страхование сотрудников</a>
                         <a class="dropdown-item" href="#"> Строительно монтажные риски</a>
                         <a class="dropdown-item" href="#"> Воздушный транспорт</a>
                         <a class="dropdown-item" href="#"> Профессиональная ответственность</a>
-                        <a class="dropdown-item" href="#"> Работников от несчастных случаев</a>
+                        <a class="dropdown-item" href="/nsur"> Работников от несчастных случаев</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

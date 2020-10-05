@@ -33,6 +33,14 @@ Route::post('/storyMessage', 'HomeController@storyMessage')->name('storyMessage'
 
 Route::post('/recaptcha', 'HomeController@recaptcha')->name('recaptcha');
 
+Route::get('/nsur', 'HomeController@nsur')->name('nsur');
+Route::get('/gruz', 'HomeController@gruz')->name('gruz');
+Route::get('/autour', 'HomeController@autour')->name('autour');
+Route::get('/saveur', 'HomeController@saveur')->name('saveur');
+Route::get('/savepep', 'HomeController@savepep')->name('savepep');
+Route::get('/obot', 'HomeController@obot')->name('obot');
+Route::get('/otwork', 'HomeController@otwork')->name('otwork');
+Route::get('/obsave', 'HomeController@obsave')->name('obsave');
 Route::get('/company', 'HomeController@company')->name('company');
 Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::get('/kasko', 'HomeController@kasko')->name('kasko');

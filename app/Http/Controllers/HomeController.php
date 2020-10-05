@@ -44,6 +44,39 @@ class HomeController extends Controller
         return view('contact');
     }
 
+    public function nsur()
+    {
+        return view('ur.nsur');
+    }
+    public function gruz()
+    {
+        return view('ur.gruz');
+    }
+    public function autour()
+    {
+        return view('ur.autour');
+    }
+    public function saveur()
+    {
+        return view('ur.saveur');
+    }
+    public function savepep()
+    {
+        return view('ur.savepep');
+    }
+    public function obot()
+    {
+        return view('ur.obot');
+    }
+    public function otwork()
+    {
+        return view('ur.otWork');
+    }
+    public function obsave()
+    {
+        return view('ur.obsave');
+    }
+
     public function kasko()
     {
         return view('kasko');
@@ -104,6 +137,7 @@ class HomeController extends Controller
             ]
         );
     }
+
     public function recaptcha(Request $request)
     {
         $client = new Client([
@@ -126,13 +160,14 @@ class HomeController extends Controller
         }
 
     }
+
     public function story(Request $request)
     {
 
         $data = '';
         foreach ($request->all() as $key => $value) {
-            if($key != 'type' AND $key != 'sum' AND $key != 'phone'){
-                $data .= $key.': '.$value.'<br>';
+            if ($key != 'type' and $key != 'sum' and $key != 'phone') {
+                $data .= $key . ': ' . $value . '<br>';
             }
         }
         $requestModel = new RequestModel();
@@ -144,9 +179,10 @@ class HomeController extends Controller
         $requestModel->save();
 
     }
+
     public function storyMessage(Request $request)
     {
-        if($request->post()){
+        if ($request->post()) {
             $requestModel = new RequestModel();
             $requestModel->type = 'message';
             $requestModel->data = $request->name;
