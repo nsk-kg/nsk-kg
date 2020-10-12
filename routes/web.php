@@ -42,6 +42,8 @@ Route::get('/obot', 'HomeController@obot')->name('obot');
 Route::get('/otwork', 'HomeController@otwork')->name('otwork');
 Route::get('/obsave', 'HomeController@obsave')->name('obsave');
 Route::get('/company', 'HomeController@company')->name('company');
+Route::get('/companyWork', 'HomeController@companyWork')->name('companyWork');
+Route::get('/audit', 'HomeController@audit')->name('audit');
 Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::get('/kasko', 'HomeController@kasko')->name('kasko');
 Route::get('/dsdsago', 'HomeController@dsdsago')->name('dsdsago');

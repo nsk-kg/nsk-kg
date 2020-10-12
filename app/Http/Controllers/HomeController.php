@@ -38,6 +38,14 @@ class HomeController extends Controller
     {
         return view('company');
     }
+    public function companyWork()
+    {
+        return view('companyWork');
+    }
+    public function audit()
+    {
+        return view('audit');
+    }
 
     public function contact()
     {
