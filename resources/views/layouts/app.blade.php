@@ -263,14 +263,14 @@
                             короткий номер  1731
                             <br>
                             г.Бишкек, ул.Ибраимова,108<br>
-                            тел.: + 996 312 888 180; + 996 555 641 888; +996 777 904 888<br>
+                            тел.: + 996 312 888 180; <br>+ 996 555 641 888; <br>+996 777 904 888<br>
 
 
                         </p>
                         <strong> Южный региональный филиал в городе ОШ</strong>
                         <p>
                             г. Ош, ул. Мухамед Али Джиннах, 15А<br>
-                            Тел: +996 (3222) 66842; +996 0556 606014; +996 0773 206705<br>
+                            Тел: +996 (3222) 66842; <br>+996 0556 606014; <br>+996 0773 206705<br>
                         </p>
                     </li>
 
@@ -304,7 +304,9 @@
                 <ul class="list-unstyled">
                     <li>
                         Следите за нашими новостями через социальные сети!<br>
-                        <a href="https://instagram.com/nsk_insurance?igshid=1rcqfex94wc3j">Instagran</a>
+
+                        <a href="https://instagram.com/nsk_insurance?igshid=1rcqfex94wc3j">  <img src="img/instagram.png"></a>
+                        <a href="https://www.facebook.com/zao.nsk"><img src="img/facebook.png"></a>
                     </li>
                 </ul>
 
