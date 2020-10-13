@@ -23,7 +23,7 @@
 
             <div class="row pt-5 mt-5" style="">
                 <div class="col-3 ">
-                    <button type="button" class="btn btn-light btn-lg btn-block">Расчитать и Оформить</button>
+                    <a href="/contact" type="button" class="btn btn-light btn-lg btn-block">Расчитать и Оформить</a>
                 </div>
             </div>
         </div>
@@ -96,17 +96,10 @@
         </div>
 
         <div class="row mt-5">
-            <div class="col-4  pt-5">
-                <p>
-                    <a href="" class="btn btn-info text-white">Программа страхования "СТАНДАРТ"</a>
-                </p>
-                <p>
-                    <a href="" class="btn btn-info text-white">Программа страхования "VIP"</a>
-                </p>
-            </div>
+
             <div class="col-4 pt-5">
                 <p>
-                    <a href="" class="btn btn-info text-white">Программа страхования "АВТО БЕЗ СТО"</a>
+                    <a href="" class="btn btn-info text-white">Программа страхования "АВТО ЗА СТО"</a>
                 </p>
                 <p>
                     <a href="" class="btn btn-info text-white">ОБОЮДНЫЙ ИНТЕРЕС</a>
