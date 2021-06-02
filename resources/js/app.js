@@ -6,7 +6,8 @@
 import 'vue-search-select/dist/VueSearchSelect.css'
 require('./bootstrap');
 
-window.Vue = require('vue');
+window.Vue
+    = require('vue/dist/vue');
 
 import { BootstrapVue, IconsPlugin, OverlayPlugin, NavbarPlugin  } from 'bootstrap-vue'
 import VueTheMask from 'vue-the-mask'
