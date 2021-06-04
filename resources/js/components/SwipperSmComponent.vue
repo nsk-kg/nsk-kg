@@ -28,7 +28,7 @@
 </template>
 <script>
     import {Swiper, SwiperSlide, directive} from 'vue-awesome-swiper'
-    //import 'swiper/css/swiper.css'
+    import 'swiper/css/swiper.css'
 
     export default {
         name: 'swiper-example-autoplay',
