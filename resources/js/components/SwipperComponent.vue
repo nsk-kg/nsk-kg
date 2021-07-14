@@ -1,21 +1,13 @@
 <template>
-
     <div class="bd-example">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
-            </ol>
-
             <div class="carousel-inner">
                 <div class="carousel-item active w-100"
                      style="background-image:url('/img/1-1.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;height:625px">
-
                     <div class="container">
                         <div class="row pt-5 mt-5" style="color:#fff">
                             <div class="col-12">
-                                <p class="display-4">
+                                <p class="display-sm-4">
                                     Страхование путешествия
                                 </p>
                                 <p class="lead">
@@ -25,34 +17,13 @@
 
                             </div>
                         </div>
-                        <div class="row pt-5 mt-5" style="">
-                            <div class="col-3 ">
-                                <a href="/ns" type="button" class="btn btn-light btn-lg btn-block">Здоровье</a>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-light btn-lg btn-block p-2">Обязательное
-                                    страхование
-                                </button>
-                            </div>
-                            <div class="col-3">
-                                <a href="/kasko" type="button" class="btn btn-light btn-lg btn-block">Авто</a>
-                            </div>
-                            <div class="col-3">
-                                <a href="/savehome" type="button" class="btn btn-light btn-lg btn-block ">Имущество</a>
-                            </div>
-                        </div>
                     </div>
-
-
                 </div>
-
-                <div class="carousel-item w-100"
-                     style="background-image:url('/img/2-2.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;height:625px">
-
+                <div class="carousel-item w-100" style="background-image:url('/img/2-2.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;height:625px">
                     <div class="container">
                         <div class="row pt-5 mt-5" style="color:#fff">
                             <div class="col-12">
-                                <p class="display-4">
+                                <p class="display-sm-4">
                                     Страхование квартир и домов
                                 </p>
                                 <p class="lead">
@@ -60,60 +31,23 @@
                                     — эти проблемы уже не страшны.<br>
                                     Защитите свое
                                 </p>
-
-                            </div>
-                        </div>
-                        <div class="row pt-5 mt-5" style="">
-                            <div class="col-3 ">
-                                <button type="button" class="btn btn-light btn-lg btn-block">Здоровье</button>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-light btn-lg btn-block p-2">Обязательное
-                                    страхование
-                                </button>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-light btn-lg btn-block">Авто</button>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-light btn-lg btn-block ">Имущество</button>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
                 <div class="carousel-item  w-100"
                      style="background-image:url('/img/3-3.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;height:625px">
                     <div class="container">
                         <div class="row pt-5 mt-5" style="color:#fff">
                             <div class="col-12">
-                                <p class="display-4">
+                                <p class="display-sm-4">
                                     КАСКО
                                 </p>
                                 <p class="lead">
                                     Это защита для вашего автомобиля от множества <br>
                                     рисков:
                                     от мелких царапин до угона.
-
                                 </p>
-
-                            </div>
-                        </div>
-                        <div class="row pt-5 mt-5" style="">
-                            <div class="col-3 ">
-                                <button type="button" class="btn btn-light btn-lg btn-block">Здоровье</button>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-light btn-lg btn-block p-2">Обязательное
-                                    страхование
-                                </button>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-light btn-lg btn-block">Авто</button>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-light btn-lg btn-block ">Имущество</button>
                             </div>
                         </div>
                     </div>
@@ -127,6 +61,21 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+
+        <div class="row main-buttons">
+            <div class="col-6 col-lg-3 p-2">
+                <button type="button" class="btn btn-light btn-lg w-100 h-100 display-sm-2">Здоровье</button>
+            </div>
+            <div class="col-6 col-lg-3 p-2">
+                <button type="button" class="btn btn-light btn-lg w-100 h-100 display-sm-2">Обязательное страхование</button>
+            </div>
+            <div class="col-6 col-lg-3 p-2">
+                <button type="button" class="btn btn-light btn-lg w-100 h-100 display-sm-2">Авто</button>
+            </div>
+            <div class="col-6 col-lg-3 p-2">
+                <button type="button" class="btn btn-light btn-lg w-100 h-100 display-sm-2">Имущество</button>
+            </div>
         </div>
     </div>
 
@@ -164,5 +113,15 @@
 </script>
 
 <style scoped>
-
+    .bd-example {
+        position: relative;
+    }
+    .main-buttons {
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateX(8px);
+        bottom: 20px;
+        width: 80%;
+    }
 </style>

@@ -1,43 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class=""
-         style="background-image:url('/img/35.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;height:500px">
-
+    <div style="background-image:url('/img/35.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;min-height:500px">
         <div class="container">
             <div class="row pt-5 " style="color:#fff">
                 <div class="col-12">
-                    <p class="display-4">
+                    <p class="display-sm-4">
                         Страхование выезжающих за рубеж
-
-
                     </p>
-
                     <p class="lead">
-                    <ul>
-                        <li>страхование здоровья</li>
-                        <li>страхование багажа</li>
-                        <li>отмена поездки и другие риски</li>
-                    </ul>
-
+                        <ul>
+                            <li>страхование здоровья</li>
+                            <li>страхование багажа</li>
+                            <li>отмена поездки и другие риски</li>
+                        </ul>
+                        <h5>Мы сделаем все возможное, чтобы ваше пребывание за рубежом принесло вам только положительные эмоции!</h5>
                     </p>
-                    <h1>
-                        Мы сделаем все возможное, чтобы ваше пребывание за рубежом принесло вам только положительные эмоции!
-
-
-                    </h1>
-
                 </div>
             </div>
         </div>
-
         <div class="container">
-
-            <div class="row pt-5 mt-5" style="">
-                <div class="col-3 ">
-                    <button type="button" class="btn btn-light btn-lg btn-block">Расчитать и Оформить</button>
-                </div>
-            </div>
+            <button type="button" class="btn btn-light btn-lg mt-5 mb-5">Расчитать и Оформить</button>
         </div>
     </div>
 
@@ -63,8 +46,8 @@
            </div>
         </div>
 
-        <div class="row mt-5" style="background-color:#F3F3F3;" >
-            <div class="col-8 p-4">
+        <div class="row mt-5" style="background-color:#F3F3F3;">
+            <div class="col-lg-8 col-xs-12 p-4">
                 <div class="wpb_wrapper"><h3 class="sc_title sc_title_regular"><span style="font-weight: 400;">Получение помощи 24/7</span></h3>
                     <div class="wpb_text_column wpb_content_element ">
                         <div class="wpb_wrapper">
@@ -90,8 +73,8 @@
                 </div>
             </div>
 
-            <div class="col-4">
-                <img src="/img/37.png" >
+            <div class="col-lg-4 col-xs-12">
+                <img src="/img/37.png" class="w-xs-100 float-center float-lg-right">
             </div>
 
         </div>

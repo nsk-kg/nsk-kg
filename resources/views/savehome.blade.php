@@ -1,13 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class=""
-         style="background-image:url('/img/2-2.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;height:500px">
-
+    <div style="background-image:url('/img/2-2.jpg');  background-repeat: no-repeat;background-size: cover;background-position: bottom center;background-attachment: fixed;min-height:500px">
         <div class="container">
             <div class="row pt-5 " style="color:#fff">
                 <div class="col-12">
-                    <p class="display-4">
+                    <p class="display-sm-4">
                         Страхование домов и квартир
                     </p>
                     <p>
@@ -18,14 +16,8 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
-
-            <div class="row pt-5 mt-5" style="">
-                <div class="col-3 ">
-                    <button type="button" class="btn btn-light btn-lg btn-block">Расчитать и Оформить</button>
-                </div>
-            </div>
+            <button type="button" class="btn btn-light btn-lg mt-5 mb-5">Расчитать и Оформить</button>
         </div>
     </div>
 
@@ -54,19 +46,16 @@
         </div>
 
         <div class="row mt-5"
-             style="border-radius: 20px; background-image:url('/img/41.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;height:300x">
-            <div class="col-8 p-5">
+             style="border-radius: 20px; background-image:url('/img/41.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;">
+            <div class="col-md-8 col-xs-12 p-5">
                 <p class="">
                     В рамках страховых программ страхуется квартира или дом, включая отделку, инженерное оборудование.<br>
                     Кроме того, страхуется гражданская ответственность клиента перед третьими лицами.<br>
                     Если в результате непредвиденного события, произошедшего в вашей квартире или доме, пострадало имущество или был нанесен вред жизни и здоровью ваших соседей, то весь ущерб будет покрыт в рамках действия страхового полиса.
                 </p>
-                <p>
-                    <a href="" class="btn btn-info text-white">ПРОГРАММА СТРАХОВАНИЯ «УЮТНЫЙ ДОМ»</a>
-                </p>
-                <p>
-                    <a href="" class="btn btn-info text-white">ПРОГРАММА СТРАХОВАНИЯ «КВАРТИРНОЕ ПРЕИМУЩЕСТВО» </a>
-                </p>
+                <a href="" class="btn btn-info text-white">ПРОГРАММА СТРАХОВАНИЯ «УЮТНЫЙ ДОМ»</a>
+                <br><br>
+                <a href="" class="btn btn-info text-white">ПРОГРАММА СТРАХОВАНИЯ «КВАРТИРНОЕ ПРЕИМУЩЕСТВО» </a>
             </div>
         </div>
 

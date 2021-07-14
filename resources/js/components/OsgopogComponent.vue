@@ -1,15 +1,9 @@
 <template>
     <div>
-
-        <code-loader v-if="!loading"
-                        :speed="3"
-                        :animate="true"
-        >
-
-        </code-loader>
+        <code-loader v-if="!loading" :speed="3" :animate="true"></code-loader>
 
         <div v-else class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-xs-12 pt-4">
                 <div class="row mt-3">
                     <div class="col-12">
                         <label>Ваш номер телефона</label>
@@ -57,12 +51,12 @@
                 </div>
 
             </div>
-            <div class="col-6 d-flex align-items-center justify-content-center">
+            <div class="col-md-6 col-xs-12 pt-4 d-flex align-items-center justify-content-center">
                 <div class="text-center">
 
                     <div class="row">
                         <div class="col-12">
-                            <h2>Премия к оплате <span class="text-danger">{{som}} Сом</span></h2>
+                            <h2>Премия к оплате <span class="text-danger" style="white-space: nowrap">{{som}} Сом</span></h2>
                         </div>
                     </div>
 
@@ -77,11 +71,7 @@
 
             </div>
         </div>
-
-
     </div>
-
-
 </template>
 <script>
     import {ModelSelect} from 'vue-search-select'

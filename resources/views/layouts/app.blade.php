@@ -78,134 +78,114 @@
 <body>
 
 <div id="">
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <div class="mt-2">
-                    <a href="/"><img src="/img/logo.svg"> </a></div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <div class="mt-2"><a href="/"><img src="/img/logo.svg"></a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/company">О компании<span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Физическим лицам
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <div class="pl-3"><b>АВТОМОБИЛЬ</b></div>
-                        <a class="dropdown-item" href="/kasko">Каско</a>
-                        <a class="dropdown-item" href="/dsdsago">ДСАГО</a>
-                        <a class="dropdown-item" href="/saveperson">Страхование пассажиров</a>
-                        <div class="dropdown-divider"></div>
-                        <div class="pl-3"><b>ПУТЕШЕСТВИЕ</b></div>
-                        <a class="dropdown-item" href="/savepersontravel">Страхование выезжающих за рубеж</a>
-                        <a class="dropdown-item" href="/medic">Страхование медецинских расходов</a>
-                        <div class="dropdown-divider"></div>
-                        <div class="pl-3"><b>ЗДОРОВЬЕ</b></div>
-                        <a class="dropdown-item" href="/ns">Страхование от несчастных случаев</a>
-                        <div class="pl-3"><b>ИМУЩЕСТВО</b></div>
-                        <a class="dropdown-item" href="/savehome">Страхование домов и квартир</a>
-
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Для Бизнеса
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <div class="pl-3"><b>ОБЯЗАТЕЛЬНОЕ СТРАХОВАНИЕ</b></div>
-                        <a class="dropdown-item" href="/otwork"> Гражданской ответственности работодателя</a>
-                        <a class="dropdown-item" href="/obsave"> Гражданской ответственности перевозчика <br>опасных
-                            грузов</a>
-                        <a class="dropdown-item" href="/obot"> Гражданской ответственности предприятий <br>источников
-                            повышенной опасности</a>
-                        <a class="dropdown-item" href="/savepep"> Гражданской ответственности перевозчика <br> перед
-                            пассажирами</a>
-                        <div class="dropdown-divider"></div>
-                        <div class="pl-3"><b>ДОБРОВОЛЬНОЕ СТРАХОВАНИЕ</b></div>
-                        <a class="dropdown-item" href="/saveur"> Имущества юридических лиц</a>
-                        <a class="dropdown-item" href="/autour"> Автотранспорт</a>
-                        <a class="dropdown-item" href="/gruz"> Грузы</a>
-                        <a class="dropdown-item" href="#"> Медицинское страхование сотрудников</a>
-                        <a class="dropdown-item" href="#"> Строительно монтажные риски</a>
-                        <a class="dropdown-item" href="#"> Воздушный транспорт</a>
-                        <a class="dropdown-item" href="#"> Профессиональная ответственность</a>
-                        <a class="dropdown-item" href="/nsur"> Работников от несчастных случаев</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Калькуляторы
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/calculators/osgop">Ответственность работодателя</a>
-                        <a class="dropdown-item" href="/calculators/osgopog">Обязательное страхование гражданской <br>ответственности перевозчика опасных грузов</a>
-                        <a class="dropdown-item" href="/calculators/osgpopp">Перевозчик перед пассажирами</a>
-                        <a class="dropdown-item" href="/calculators/osopo">Страхование гражданской ответственности <br> организаций, эксплуатирующих опасные производственные объекты
-                        </a>
-                    </div>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="/contact">Контакты<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-            <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto">
-                <!-- Authentication Links -->
-                @guest
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Войти') }}</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/company">О компании<span class="sr-only">(current)</span></a>
                     </li>
-
-
-                @else
-                    <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }} <span class="caret"></span>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Физическим лицам
                         </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="pl-3"><b>АВТОМОБИЛЬ</b></div>
+                            <a class="dropdown-item" href="/kasko">Каско</a>
+                            <a class="dropdown-item" href="/dsdsago">ДСАГО</a>
+                            <a class="dropdown-item" href="/saveperson">Страхование пассажиров</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="pl-3"><b>ПУТЕШЕСТВИЕ</b></div>
+                            <a class="dropdown-item" href="/savepersontravel">Страхование выезжающих за рубеж</a>
+                            <a class="dropdown-item" href="/medic">Страхование медецинских расходов</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="pl-3"><b>ЗДОРОВЬЕ</b></div>
+                            <a class="dropdown-item" href="/ns">Страхование от несчастных случаев</a>
+                            <div class="pl-3"><b>ИМУЩЕСТВО</b></div>
+                            <a class="dropdown-item" href="/savehome">Страхование домов и квартир</a>
 
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-
-
-                                <a class="dropdown-item" href="{{ route('cabinet') }}">Рассчеты</a>
-                                <a class="dropdown-item" href="{{ route('cabinet.life') }}">Страховой случай</a>
-
-
-                            <a class="dropdown-item" href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                Выйти
-                            </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                  style="display: none;">
-                                @csrf
-                            </form>
                         </div>
                     </li>
-                @endguest
-            </ul>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Для Бизнеса
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="pl-3"><b>ОБЯЗАТЕЛЬНОЕ СТРАХОВАНИЕ</b></div>
+                            <a class="dropdown-item" href="/otwork"> Гражданской ответственности работодателя</a>
+                            <a class="dropdown-item" href="/obsave"> Гражданской ответственности перевозчика опасных грузов</a>
+                            <a class="dropdown-item" href="/obot"> Гражданской ответственности предприятий источников повышенной опасности</a>
+                            <a class="dropdown-item" href="/savepep"> Гражданской ответственности перевозчика перед пассажирами</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="pl-3"><b>ДОБРОВОЛЬНОЕ СТРАХОВАНИЕ</b></div>
+                            <a class="dropdown-item" href="/saveur"> Имущества юридических лиц</a>
+                            <a class="dropdown-item" href="/autour"> Автотранспорт</a>
+                            <a class="dropdown-item" href="/gruz"> Грузы</a>
+                            <a class="dropdown-item" href="#"> Медицинское страхование сотрудников</a>
+                            <a class="dropdown-item" href="#"> Строительно монтажные риски</a>
+                            <a class="dropdown-item" href="#"> Воздушный транспорт</a>
+                            <a class="dropdown-item" href="#"> Профессиональная ответственность</a>
+                            <a class="dropdown-item" href="/nsur"> Работников от несчастных случаев</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Калькуляторы
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/calculators/osgop">Ответственность работодателя</a>
+                            <a class="dropdown-item" href="/calculators/osgopog">Обязательное страхование гражданской ответственности перевозчика опасных грузов</a>
+                            <a class="dropdown-item" href="/calculators/osgpopp">Перевозчик перед пассажирами</a>
+                            <a class="dropdown-item" href="/calculators/osopo">Страхование гражданской ответственности организаций, эксплуатирующих опасные производственные объекты</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/contact">Контакты<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Войти') }}</a>
+                        </li>
+                    @else
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('cabinet') }}">Рассчеты</a>
+                                <a class="dropdown-item" href="{{ route('cabinet.life') }}">Страховой случай</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Выйти
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
+                    @endguest
+                </ul>
+            </div>
         </div>
     </nav>
 </div>
 
-    @yield('content')
+@yield('content')
 
 <!-- Footer -->
 <footer class="page-footer font-small indigo mt-5">
-<hr>
+    <hr>
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
 
@@ -260,7 +240,7 @@
                     <li>
                         <strong>Центр Обслуживания клиентов в городе Бишкек</strong>
                         <p>
-                            короткий номер  1731
+                            короткий номер 1731
                             <br>
                             г.Бишкек, ул.Ибраимова,108<br>
                             тел.: + 996 312 888 180; <br>+ 996 555 641 888; <br>+996 777 904 888<br>
@@ -305,7 +285,8 @@
                     <li>
                         Следите за нашими новостями через социальные сети!<br>
 
-                        <a href="https://instagram.com/nsk_insurance?igshid=1rcqfex94wc3j">  <img src="img/instagram.png"></a>
+                        <a href="https://instagram.com/nsk_insurance?igshid=1rcqfex94wc3j"> <img
+                                src="img/instagram.png"></a>
                         <a href="https://www.facebook.com/zao.nsk"><img src="img/facebook.png"></a>
                     </li>
                 </ul>

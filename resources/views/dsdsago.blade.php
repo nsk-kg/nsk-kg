@@ -1,13 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class=""
-         style="background-image:url('/img/28.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;height:500px">
+    <div style="background-image:url('/img/28.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;min-height:500px">
 
         <div class="container">
             <div class="row pt-5 " style="color:#fff">
                 <div class="col-12">
-                    <p class="display-4">
+                    <p class="display-sm-4">
                         Добровольное Страхование
 
                         Автогражданской Ответственности
@@ -22,12 +21,7 @@
             </div>
         </div>
         <div class="container">
-
-            <div class="row pt-5 mt-5" style="">
-                <div class="col-3 ">
-                    <button type="button" class="btn btn-light btn-lg btn-block">Расчитать и Оформить</button>
-                </div>
-            </div>
+            <button type="button" class="btn btn-light btn-lg mt-5 mb-5">Расчитать и Оформить</button>
         </div>
     </div>
     <main class="py-4 container" id="app">
@@ -38,11 +32,7 @@
 
 
         <div class="row mt-5">
-
-            <div class="col-4">
-                <img src="/img/31.png" width="400px">
-            </div>
-            <div class="col-8  pt-5 pl-5">
+            <div class="col-md-6 col-xs-12 order-xs-1 order-md-2">
 
                 <p><span style="font-size: 18px;"><b>Риски покрываемые ДСАГО:</b></span></p>
                 <ul>
@@ -52,15 +42,18 @@
                     <li>других участников дорожного движения.</li>
                 </ul>
             </div>
+            <div class="col-md-6 col-xs-12 order-xs-2 order-md-1">
+                <img src="/img/31.png" width="400px" class="float-center w-xs-100">
+            </div>
+
         </div>
 
-        <div class="row mt-5">
-            <div class="col-6">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12 mt-5">
                 <div class="vc_row wpb_row vc_row-fluid vc_custom_1553327411440">
                     <div class="wpb_column vc_column_container vc_col-sm-6">
                         <div class="vc_column-inner ">
-                            <div class="wpb_wrapper"><h2 style="color: #c93500;text-align: left"
-                                                         class="vc_custom_heading">Минусы</h2>
+                            <div class="wpb_wrapper"><h2 style="color: #c93500;text-align: left" class="vc_custom_heading">Минусы</h2>
                                 <div class="wpb_text_column wpb_content_element ">
                                     <div class="wpb_wrapper">
                                         <ul>
@@ -82,11 +75,10 @@
 
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6 col-xs-12 mt-5">
                 <div class="wpb_column vc_column_container vc_col-sm-6">
                     <div class="vc_column-inner ">
-                        <div class="wpb_wrapper"><h2 style="color: #2ca006;text-align: left"
-                                                     class="vc_custom_heading">Плюсы</h2>
+                        <div class="wpb_wrapper"><h2 style="color: #2ca006;text-align: left" class="vc_custom_heading">Плюсы</h2>
                             <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                     <ul>
@@ -193,9 +185,6 @@
 
             </div>
         </div>
-        </div>
-
-
     </main>
 
 @endsection

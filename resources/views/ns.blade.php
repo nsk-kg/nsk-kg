@@ -1,13 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class=""
-         style="background-image:url('/img/39.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;height:500px">
-
+    <div style="background-image:url('/img/39.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center bottom;background-attachment: fixed;min-height:500px">
         <div class="container">
             <div class="row pt-5 " style="color:#fff">
                 <div class="col-12">
-                    <p class="display-4">
+                    <p class="display-sm-4">
                         Страхование от несчастных случаев
                     </p>
                     <p>
@@ -19,14 +17,8 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
-
-            <div class="row pt-5 mt-5" style="">
-                <div class="col-3 ">
-                    <button type="button" class="btn btn-light btn-lg btn-block">Расчитать и Оформить</button>
-                </div>
-            </div>
+            <button type="button" class="btn btn-light btn-lg mt-5 mb-5">Расчитать и Оформить</button>
         </div>
     </div>
 
@@ -56,17 +48,11 @@
         </div>
 
         <div class="row mt-5"
-             style="border-radius: 20px; background-image:url('/img/40.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;height:625px">
-            <div class="col-8 p-5 mt-5">
-                <p class="mt-5">
-                    1<a href="#" class="btn btn-link btn-lg">ПРОГРАММА СТРАХОВАНИЯ «БАЛАЛЫК» ДЛЯ ЛИЦ ОТ 3 ДО 18 ЛЕТ</a>
-                </p>
-                <p class="">
-                    2<a href="#" class="btn btn-link btn-lg">ПРОГРАММА СТРАХОВАНИЯ «САЛАМАТ» ДЛЯ ЛИЦ ОТ 18 ДО 65 ЛЕТ</a>
-                </p>
-                <p class="">
-                    3<a href="#" class="btn btn-link btn-lg">ПРОГРАММА СТРАХОВАНИЯ «ЧЕМПИОН» ДЛЯ СПОРТСМЕНОВ</a>
-                </p>
+             style="border-radius: 20px; background-image:url('/img/40.jpg'); background-repeat: no-repeat;background-size: cover;background-position: center top;min-height:625px">
+            <div class="col-12 p-5 mt-5">
+                1. <a href="#" class="btn btn-link btn-lg">ПРОГРАММА СТРАХОВАНИЯ «БАЛАЛЫК» ДЛЯ ЛИЦ ОТ 3 ДО 18 ЛЕТ</a><br>
+                2. <a href="#" class="btn btn-link btn-lg">ПРОГРАММА СТРАХОВАНИЯ «САЛАМАТ» ДЛЯ ЛИЦ ОТ 18 ДО 65 ЛЕТ</a><br>
+                3. <a href="#" class="btn btn-link btn-lg">ПРОГРАММА СТРАХОВАНИЯ «ЧЕМПИОН» ДЛЯ СПОРТСМЕНОВ</a>
             </div>
         </div>
 

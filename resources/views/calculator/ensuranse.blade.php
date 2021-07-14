@@ -14,14 +14,14 @@
 
         <div class="row" id="app">
 
-            <div class="col-6">
+            <div class="col-sm-6 col-xs-12">
                 <label>Имя</label>
                 <input type="text" name="firstName" class="form-control ">
                 <label>Фамилия</label>
                 <input type="text" name="MidleName" class="form-control ">
                 <label>Отчество</label>
                 <input type="text" name="MidleName" class="form-control ">
-                <label>продукт</label>
+                <label>Продукт</label>
                 <select name="product" class="form-control ">
                     <option value="1">ОГПО</option>
                     <option value="2">ДС ГПО автовладельцев</option>
@@ -33,7 +33,7 @@
                 </select>
             </div>
 
-            <div class="col-6">
+            <div class="col-sm-6 col-xs-12">
                 <label>Номер полиса</label>
                 <input type="text" name="polis" class="form-control ">
                 <label>Телефон</label>
