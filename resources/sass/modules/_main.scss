@@ -52,7 +52,7 @@
         width: 100%;
     }
     @media (min-width: 768px) {
-        width: 400px;
+        min-width: 400px;
     }
 }
 .active > .dropdown-menu > .dropdown-item{
@@ -74,4 +74,44 @@
 
 .table.table-bordered > * {
     width: 100% !important;
+}
+
+/* БЛОК С ОФИСАМИ НА ГЛАВНОЙ СТРАНИЦЕ */
+
+.office-block {
+    transition: all 0.2s ease;
+}
+.office-block:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in;
+}
+
+.dropdown-menu.big.show {
+    @media (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+/* Fixes to match nsk.kz */
+ul li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, ul, ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav li a, .nav li a:active, .nav li a:focus, .nav li a:hover, a, a:active, a:active span, a:focus, a:focus span, a:hover, a:hover span, a span, button, button:active, button:focus, button:hover {
+    text-decoration: none;
+    box-shadow: none;
+    outline: none !important;
+}
+
+a, span {
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
 }

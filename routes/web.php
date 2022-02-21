@@ -63,3 +63,18 @@ Route::get('/calculators/osgopog/', 'CalculatorController@osgopog')->name('osgop
 Route::get('/calculators/osgpopp/', 'CalculatorController@osgpopp')->name('osgpopp');
 
 Route::get(config('laravel_pages.view_pages_route'), '\Appoly\LaravelPages\Http\Controllers\PagesController@show')->name('laravel-pages.show');
+
+Route::get('/topmanagement', 'HomeController@topmanagement')->name('topmanagement');
+Route::get('/partners', 'HomeController@partners')->name('partners');
+Route::get('/clients', 'HomeController@clients')->name('clients');
+Route::get('/finances', 'HomeController@finances')->name('finances');
+Route::get('/reinsurance', 'HomeController@reinsurance')->name('reinsurance');
+Route::get('/insrules', 'HomeController@insrules')->name('insrules');
+Route::get('/insblog', 'HomeController@insblog')->name('insblog');
+Route::get('/interest', 'HomeController@interest')->name('interest');
+Route::get('/kaskosto', 'HomeController@kaskosto')->name('kaskosto');
+Route::get('/becomeagent', 'HomeController@becomeagent')->name('becomeagent');
+
+
+
+

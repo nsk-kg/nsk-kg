@@ -6,16 +6,18 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'www.nsk.kg') }}</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <style>
         @font-face {
-            font-family: OptimusPrinceps;
-            src: url('font/K_Avante-Regular.ttf');
+            font-family: MuseoSansCyrl-300;
+            src: url('font/MuseoSansCyrl-300.ttf');
         }
 
         body {
-            font-family: OptimusPrinceps;
+            font-family: MuseoSansCyrl-300, Helvetica, Arial, sans-serif;
+            padding-top:84px;
         }
 
 
@@ -71,16 +73,131 @@
             -webkit-transition-delay: .1s;
             transition-delay: .1s;
         }
+
+        .header {
+            z-index: 3;
+            width: 100%;
+        }
+
+        .social-contacts {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            background: rgba(255, 255, 255, 0.9);
+            border-top-left-radius: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: .25s;
+            z-index: 9999;
+        }
+
+        .social-contacts .social-contacts-item {
+            margin-bottom: 20px;
+
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+
+            cursor: pointer;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-contacts .social-contacts-item#cl-phone-0555904888 {
+            margin-bottom: 20px;
+            width: 50px;
+            height: 50px;
+
+            background: white;
+            border: 1px solid #0094DF;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-contacts #social-hide {
+            padding-bottom: 20px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .social-contacts .social-contacts-item#cl-phone-0555904888 {
+                margin-bottom: 30px;
+            }
+        }
+
+        .tooltiptext {
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            right: 110%;
+            transition: opacity 0.3s;
+        }
+
+        .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            margin-top: -4px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent #555;
+        }
+
+        .tooltipimg {
+            position: relative;
+        }
+
+        .tooltipimg:hover .tooltiptext {
+            opacity: 1 !important;
+            display: unset !important;
+        }
     </style>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+<div class="social-contacts" id="social-body">
+    <a class="" id="social-hide">
+        <img src="/img/socials-widget/down.svg" height="20px" width="20px">
+    </a>
 
-<div id="">
+    <a class="social-contacts-item" id="cl-phone-0555904888">
+        <img src="/img/socials-widget/phone-call.svg" height="30px" width="30px">
+    </a>
+
+    <a class="social-contacts-item tooltipimg" href="https://wa.me/0555904888?text=Здравствуйте. Я хочу вызвать аварийного комиссара"
+       target="_blank" id="cl-whatsapp">
+        <img src="/img/socials-widget/callback.png" class="" height="45px" width="45px">
+        <span class="tooltiptext">Аварийный комиссар</span>
+    </a>
+
+    <a class="social-contacts-item" href="https://wa.me/0555904888?text=Здравствуйте. Нужна консультация."
+       target="_blank" id="cl-whatsapp">
+        <img src="/img/socials-widget/whatsapp-logo.svg" height="50px" width="50px">
+    </a>
+
+    <a class="social-contacts-item"
+       href="tg://resolve?domain=nsk_kz_official&text=Здравствуйте. Я хочу приобрести полис" target="_blank"
+       id="cl-telegram">
+        <img src="/img/socials-widget/telegram-logo.svg" height="45px" width="45px">
+    </a>
+</div>
+<div id="" class="header fixed-top ">
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-                <div class="mt-2"><a href="/"><img src="/img/logo.svg"></a></div>
+                <div class="mt-2"><a href="/"><img src="{{ asset('img/logo.svg')  }}" width="140" height="60"></a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -88,93 +205,92 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/company">О компании<span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            О компании
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/company">О компании</a>
+                            <a class="dropdown-item" href="/topmanagement">Топ менеджмент</a>
+                            <a class="dropdown-item" href="/finances">Финансовые показатели</a>
+                            <a class="dropdown-item" href="/reinsurance">Перестрахование</a>
+                            <a class="dropdown-item" href="/insrules">Правила страхования</a>
+                            <a class="dropdown-item" href="/insblog">Блог о страховании</a>
+                            <a class="dropdown-item" href="/companyWork">Вакансии</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Физическим лицам
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="pl-3"><b>АВТОМОБИЛЬ</b></div>
-                            <a class="dropdown-item" href="/kasko">Каско</a>
-                            <a class="dropdown-item" href="/dsdsago">ДСАГО</a>
-                            <a class="dropdown-item" href="/saveperson">Страхование пассажиров</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="pl-3"><b>ПУТЕШЕСТВИЕ</b></div>
-                            <a class="dropdown-item" href="/savepersontravel">Страхование выезжающих за рубеж</a>
-                            <a class="dropdown-item" href="/medic">Страхование медецинских расходов</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="pl-3"><b>ЗДОРОВЬЕ</b></div>
-                            <a class="dropdown-item" href="/ns">Страхование от несчастных случаев</a>
-                            <div class="pl-3"><b>ИМУЩЕСТВО</b></div>
-                            <a class="dropdown-item" href="/savehome">Страхование домов и квартир</a>
-
+                        <div class="dropdown-menu big" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-item-block">
+                                <div class="pl-3"><b>АВТОМОБИЛЬ</b></div>
+                                <a class="dropdown-item" href="/kasko">Страхование транспорта</a>
+                                <a class="dropdown-item" href="/interest">Обоюдный интерес</a>
+                                <a class="dropdown-item" href="/kaskosto">КАСКО за 100</a>
+                                <div class="dropdown-divider"></div>
+                                <div class="pl-3"><b>ПУТЕШЕСТВИЯ</b></div>
+                                <a class="dropdown-item" href="/savepersontravel">ВОКРУГ СВЕТА</a>
+                                <a class="dropdown-item" href="/medic">ДМС КР для въезжающих в КР</a>
+                            </div>
+                            <div class="dropdown-item-block">
+                                <div class="dropdown-divider"></div>
+                                <div class="pl-3"><b>ЖИЗНЬ И ЗДОРОВЬЕ</b></div>
+                                <a class="dropdown-item" href="/ns">Страхование детей от несчастных случаев (Балалык)</a>
+                                <a class="dropdown-item" href="/ns">Страхование от несчастных случаев (Саламат)</a>
+                                <div class="dropdown-divider"></div>
+                                <div class="pl-3"><b>ИМУЩЕСТВО</b></div>
+                                <a class="dropdown-item" href="/savehome">Страхование домов</a>
+                                <a class="dropdown-item" href="/savehome">Страхование квартир</a>
+                                <a class="dropdown-item" href="/savehome">Страхование дач и загородных домов</a>
+                                <a class="dropdown-item" href="/savehome">Ответственность перед соседями</a>
+                                <a class="dropdown-item" href="/savehome">Уютный дом</a>
+                                <a class="dropdown-item" href="/savehome">Комфорт</a>
+                                <a class="dropdown-item" href="/savehome">Залоговое имущество</a>
+                            </div>
                         </div>
                     </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Для Бизнеса
+                            Корпоративным клиентам
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="pl-3"><b>ОБЯЗАТЕЛЬНОЕ СТРАХОВАНИЕ</b></div>
-                            <a class="dropdown-item" href="/otwork"> Гражданской ответственности работодателя</a>
-                            <a class="dropdown-item" href="/obsave"> Гражданской ответственности перевозчика опасных грузов</a>
-                            <a class="dropdown-item" href="/obot"> Гражданской ответственности предприятий источников повышенной опасности</a>
-                            <a class="dropdown-item" href="/savepep"> Гражданской ответственности перевозчика перед пассажирами</a>
+                            <div class="pl-3"><b>ИМУЩЕСТВО</b></div>
+                            <a class="dropdown-item" href="/saveur">Недвижимое имущество</a>
+                            <a class="dropdown-item" href="/saveur">Движимое  имущество</a>
+                            <a class="dropdown-item" href="/saveur">Залоговое  имущество</a>
                             <div class="dropdown-divider"></div>
-                            <div class="pl-3"><b>ДОБРОВОЛЬНОЕ СТРАХОВАНИЕ</b></div>
-                            <a class="dropdown-item" href="/saveur"> Имущества юридических лиц</a>
-                            <a class="dropdown-item" href="/autour"> Автотранспорт</a>
-                            <a class="dropdown-item" href="/gruz"> Грузы</a>
-                            <a class="dropdown-item" href="#"> Медицинское страхование сотрудников</a>
-                            <a class="dropdown-item" href="#"> Строительно монтажные риски</a>
-                            <a class="dropdown-item" href="#"> Воздушный транспорт</a>
-                            <a class="dropdown-item" href="#"> Профессиональная ответственность</a>
-                            <a class="dropdown-item" href="/nsur"> Работников от несчастных случаев</a>
+                            <div class="pl-3"><b>АВТОПАРК</b></div>
+                            <a class="dropdown-item" href="/autour">КАСКО</a>
+                            <a class="dropdown-item" href="/autour">ДСАГО</a>
+                            <a class="dropdown-item" href="/autour">Места в авто ТС</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="pl-3"><b>ПРОЧЕЕ</b></div>
+                            <a class="dropdown-item" href="/gruz">Грузы</a>
+                            <a class="dropdown-item" href="#">Строительно-монтажные работы</a>
+                            <div class="dropdown-divider"></div>
+                            <div class="pl-3"><b>СОТРУДНИКИ</b></div>
+                            <a class="dropdown-item" href="#">ДМС</a>
+                            <a class="dropdown-item" href="#">НС</a>
+                            <a class="dropdown-item" href="/nsur">ОСГОР</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Калькуляторы
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Обязательное страхование
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/calculators/osgop">Ответственность работодателя</a>
-                            <a class="dropdown-item" href="/calculators/osgopog">Обязательное страхование гражданской ответственности перевозчика опасных грузов</a>
-                            <a class="dropdown-item" href="/calculators/osgpopp">Перевозчик перед пассажирами</a>
-                            <a class="dropdown-item" href="/calculators/osopo">Страхование гражданской ответственности организаций, эксплуатирующих опасные производственные объекты</a>
+                            <a class="dropdown-item" href="/otwork">Ответственности работодателя</a>
+                            <a class="dropdown-item" href="/obot">Ответственности организаций предприятий повышенной опасности </a>
+                            <a class="dropdown-item" href="/obsave">Ответственности перевозчиков опасных грузов</a>
+                            <a class="dropdown-item" href="/savepep">Ответственности перевозчиков пассажиров</a>
                         </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/contact">Контакты<span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    @guest
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Войти') }}</a>
-                        </li>
-                    @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('cabinet') }}">Рассчеты</a>
-                                <a class="dropdown-item" href="{{ route('cabinet.life') }}">Страховой случай</a>
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    Выйти
-                                </a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    @csrf
-                                </form>
-                            </div>
-                        </li>
-                    @endguest
                 </ul>
             </div>
         </div>
@@ -200,25 +316,19 @@
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#">Главная</a>
+                        <a href="/#">Главная</a>
                     </li>
                     <li>
-                        <a href="#">О компании</a>
+                        <a href="/company">О компании</a>
                     </li>
                     <li>
-                        <a href="#">Юридическим лицам</a>
+                        <a href="/#">Юридическим лицам</a>
                     </li>
                     <li>
-                        <a href="#">Физическим лицам</a>
+                        <a href="/#">Физическим лицам</a>
                     </li>
                     <li>
-                        <a href="#">Правила страхования</a>
-                    </li>
-                    <li>
-                        <a href="#">Лицензии</a>
-                    </li>
-                    <li>
-                        <a href="#">Финансовые показатели</a>
+                        <a href="/insrules">Правила страхования</a>
                     </li>
                     <li>
                         <a href="/contact">Контакты</a>
@@ -303,7 +413,7 @@
     <!-- Footer Links -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
         <a href="https://www.nsk.kg/"> www.nsk.kg</a>
     </div>
     <!-- Copyright -->

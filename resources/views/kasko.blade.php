@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div style="background-image:url('/img/20.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center bottom;background-attachment: fixed;min-height:500px">
+    <div style="background-image:url('/img/20.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center center;min-height:500px">
 
         <div class="container">
             <div class="row pt-5 " style="color:#fff">

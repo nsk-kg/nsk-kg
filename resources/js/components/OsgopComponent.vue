@@ -9,7 +9,6 @@
                         <div class="col-12">
                             <label>Ваш номер телефона</label>
                             <the-mask :mask="['+### ### ### ###']" class="form-control" placeholder=""v-model="phone" />
-
                         </div>
                     </div>
                     <div class="row mt-3">

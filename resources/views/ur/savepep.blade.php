@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div style="background-image:url('/img/savepep1.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;min-height:500px">
+    <div style="background-image:url('/img/savepep1.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center center;min-height:500px">
         <div class="container">
             <div class="row pt-5 " style="color:#fff">
                 <div class="col-12">
@@ -36,6 +36,16 @@
                         <a href="#" class="btn btn-primary">Подробнее</a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-12 mt-3">
+                <p class="h2">Калькулятор</p>
+            </div>
+        </div>
+        <div class="row" id="app">
+            <div class="col-12">
+                <osgpopp-component></osgpopp-component>
             </div>
         </div>
     </main>

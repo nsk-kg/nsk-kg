@@ -34,6 +34,51 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function topmanagement()
+    {
+        return view('.headerAboutCompany/topmanagement');
+    }
+
+    public function partners()
+    {
+        return view('.headerAboutCompany/partners');
+    }
+
+    public function clients()
+    {
+        return view('.headerAboutCompany/clients');
+    }
+
+    public function finances()
+    {
+        return view('.headerAboutCompany/finances');
+    }
+
+    public function reinsurance()
+    {
+        return view('.headerAboutCompany/reinsurance');
+    }
+
+    public function insrules()
+    {
+        return view('.headerAboutCompany/insrules');
+    }
+
+    public function insblog()
+    {
+        return view('.headerAboutCompany/insblog');
+    }
+
+    public function interest()
+    {
+        return view('.headerForIndividuals/interest');
+    }
+
+    public function kaskosto()
+    {
+        return view('.headerForIndividuals/kaskosto');
+    }
+
     public function company()
     {
         return view('company');
@@ -118,6 +163,11 @@ class HomeController extends Controller
     public function savehome()
     {
         return view('savehome');
+    }
+
+    public function becomeagent()
+    {
+        return view('becomeagent');
     }
 
     public function ensuranse()

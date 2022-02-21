@@ -32,6 +32,9 @@ Vue.component('osgopog-component', require('./components/OsgopogComponent.vue').
 Vue.component('osopo-component', require('./components/OsopoComponent.vue').default);
 Vue.component('osgop-component', require('./components/OsgopComponent.vue').default);
 Vue.component('osgpopp-component', require('./components/OsgpoppComponent.vue').default);
+Vue.component('office-modal', require('./components/OfficeModal.vue').default);
+Vue.component('become-agent-form', require('./components/BecomeAgentForm.vue').default);
+
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
@@ -46,3 +49,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+/**
+ * Custom JS code
+ */
+require('./index');

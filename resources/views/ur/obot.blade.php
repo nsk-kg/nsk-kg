@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div style="background-image:url('/img/obot1.jpg'); background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;min-height:500px">
+    <div style="background-image:url('/img/obot1.jpg'); background-repeat: no-repeat;background-size: cover;background-position: center center;min-height:500px">
         <div class="container">
             <div class="row pt-5 " style="color:#fff">
                 <div class="col-12">
@@ -78,7 +78,16 @@
                     <p><b>Базовый страховой тариф равен 0,144 %.</b></p>
                     <p>&nbsp;</p>
                     <p><span style="font-weight: 400;">В случае территориального расположения производственного опасного объекта вблизи населенных пунктов, охраняемых государством природных зон, рек, озер, сельскохозяйственных угодий, к базовому тарифу применяется повышающий коэффициент 1,5 за исключением объектов, на которых используются стационарно установленные и передвижные грузоподъемные механизмы, эскалаторы, канатные дороги, фуникулеры.</span></p>
-
+                    <div class="row" >
+                        <div class="col-12 mt-3">
+                            <p class="h2">Калькулятор</p>
+                        </div>
+                    </div>
+                    <div class="row" id="app">
+                        <div class="col-12">
+                            <osopo-component></osopo-component>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

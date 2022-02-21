@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div style="background-image:url('/img/otw1.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center top;background-attachment: fixed;min-height:500px">
+    <div style="background-image:url('/img/otw1.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center center;min-height:500px">
         <div class="container">
             <div class="row pt-5 " style="color:#fff">
                 <div class="col-12">
@@ -77,7 +77,17 @@
                             </ul>
                             <p><span style="font-weight: 400;">При заключении договора страхования со страховой суммой выше годового фонда оплаты труда применяются поправочные </span><span
                                     style="font-weight: 400;">коэффициенты к страховому тарифу.</span></p>
-
+                            <div class="row" >
+                                <div class="col-12 mt-3">
+                                    <p class="h2">Калькулятор</p>
+                                </div>
+                            </div>
+                            <div class="row" id="app">
+                                <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+                                <div class="col-12">
+                                    <osgop-component csrf="{{csrf_token()}}"></osgop-component>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
