@@ -170,32 +170,6 @@ class HomeController extends Controller
         return view('becomeagent');
     }
 
-    public function ensuranse()
-    {
-        return view('calculator.ensuranse');
-    }
-
-    public function ensuranseCreate(EnsuransRequest $request)
-    {
-        $path = '';
-        if ($request->file('image')) {
-            $path = $request->file('image')->store('image');
-        }
-        $request->file = $path;
-
-        EnsuranseModel::create(
-            [
-                'firstName' => $request->firstName,
-                'MidleName' => $request->MidleName,
-                'product' => $request->product,
-                'polis' => $request->polis,
-                'telephone' => $request->telephone,
-                'status' => '0',
-                'image' => $path,
-            ]
-        );
-    }
-
     public function recaptcha(Request $request)
     {
         $client = new Client([

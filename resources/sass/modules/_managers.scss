@@ -1,0 +1,104 @@
+.manager {
+	position: relative;
+	overflow: hidden;
+	+ .manager {
+		margin-top: 50px;
+	}
+}
+
+.manager-avatar {
+	float: left;
+	overflow: hidden;
+}
+
+.manager-avatar-img {
+
+}
+
+.manager-meta {
+	margin-bottom: 12px;
+	padding-top: 10px;
+	overflow: hidden;
+}
+
+.manager-name {
+	margin-bottom: 4px;
+	font-family: $font-primary-500;
+	font-size: 17px;
+	line-height: 25px;
+	color: #000;
+}
+
+.manager-position {
+	font-family: $font-primary-300;
+	font-size: 12px;
+	line-height: 18px;
+	color: #5E6C71;
+}
+
+.manager-description {
+	overflow: hidden;
+}
+
+.manager.has-img-left {
+	.manager-avatar {
+		margin-right: 45px;
+	}
+}
+
+.manager.has-img-right {
+	.manager-avatar {
+		float: right;
+		margin-left: 45px;
+	}
+	.manager-meta,
+	.manager-description {
+		padding-right: 50px;
+	}
+}
+
+.manager.is-offtop {
+	.manager-meta {
+		margin-top: 72px;
+	}
+}
+
+.manager--secondary {
+	.manager-avatar {
+		margin-left: 200px;
+	}
+	.manager-meta {
+		position: absolute;
+		left: 0;
+		width: 165px;
+	}
+	&.is-offtop {
+		.manager-description {
+			margin-top: 72px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+    .manager {
+        .manager-meta {
+            position: static;
+            width: 100%;
+            margin-top: 15px !important;
+            margin-bottom: 10px;
+        }
+        .manager-description {
+            margin-top: 20px !important;
+            padding-right: 0 !important;
+        }
+    }
+    .manager-avatar {
+        width: 100%;
+        float: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        img {
+            max-width: 100%;
+        }
+    }
+}

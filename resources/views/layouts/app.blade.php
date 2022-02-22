@@ -12,7 +12,7 @@
     <style>
         @font-face {
             font-family: MuseoSansCyrl-300;
-            src: url('font/MuseoSansCyrl-300.ttf');
+            src: url('fonts/MuseoSansCyrl-300.ttf');
         }
 
         body {
