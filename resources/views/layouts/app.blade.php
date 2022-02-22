@@ -177,19 +177,19 @@
         <img src="/img/socials-widget/phone-call.svg" height="30px" width="30px">
     </a>
 
-    <a class="social-contacts-item tooltipimg" href="https://wa.me/0555904888?text=Здравствуйте. Я хочу вызвать аварийного комиссара"
+    <a class="social-contacts-item tooltipimg" href="https://wa.me/+996558954888?text=Здравствуйте."
        target="_blank" id="cl-whatsapp">
         <img src="/img/socials-widget/callback.png" class="" height="45px" width="45px">
         <span class="tooltiptext">Аварийный комиссар</span>
     </a>
 
-    <a class="social-contacts-item" href="https://wa.me/0555904888?text=Здравствуйте. Нужна консультация."
+    <a class="social-contacts-item" href="https://wa.me/0555904888?text=Здравствуйте."
        target="_blank" id="cl-whatsapp">
         <img src="/img/socials-widget/whatsapp-logo.svg" height="50px" width="50px">
     </a>
 
     <a class="social-contacts-item"
-       href="tg://resolve?domain=nsk_kz_official&text=Здравствуйте. Я хочу приобрести полис" target="_blank"
+       href="tg://resolve?domain=&text=Здравствуйте." target="_blank"
        id="cl-telegram">
         <img src="/img/socials-widget/telegram-logo.svg" height="45px" width="45px">
     </a>
@@ -290,6 +290,19 @@
                             <a class="dropdown-item" href="/obsave">Ответственности перевозчиков опасных грузов</a>
                             <a class="dropdown-item" href="/savepep">Ответственности перевозчиков пассажиров</a>
                         </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="numbers">
+                <ul>
+                    <li>
+                        <a href="tel:+996 312 644 555">+996 312 644 555</a>
+                    </li>
+                    <li>
+                        <a href="tel:+996 777 904 888">+996 777 904 888</a>
+                    </li>
+                    <li>
+                        <a href="tel:+996 555 904 888">+996 555 904 888</a>
                     </li>
                 </ul>
             </div>
