@@ -118,13 +118,13 @@ a, span {
 }
 
 /* НОМЕРА ТЕЛЕФОНОВ НА ГЛАВНОЙ СТРАНИЦЕ */
-.numbers {
+.numbers-header {
     font-size: 12px;
     display: flex;
     align-items: center;
 }
 
-.numbers::before {
+.numbers-header::before {
     content: '';
     background: url("/img/icon-phone.svg");
     background-size: 30px;

@@ -293,7 +293,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="numbers">
+            <div class="numbers-header">
                 <ul>
                     <li>
                         <a href="tel:+996 312 644 555">+996 312 644 555</a>
