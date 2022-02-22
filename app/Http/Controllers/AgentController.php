@@ -23,7 +23,7 @@ class AgentController extends Controller
     public function sendmail(Request $request)
     {
         $mess = $request;
-        \Mail::to('adekaok870@gmail.com')->send(new \App\Mail\AgentForm($mess));
+        \Mail::to('hr@nsk.kg')->send(new \App\Mail\AgentForm($mess));
         echo "Ваша заявка успешно отправлена!";
         return $mess;
     }
