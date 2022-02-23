@@ -195,7 +195,7 @@
     </a>
 </div>
 <div id="" class="header fixed-top ">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-xl navbar-light bg-white shadow-sm">
         <div class="container">
                 <div class="mt-2"><a href="/"><img src="{{ asset('img/logo.svg')  }}" width="140" height="60"></a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

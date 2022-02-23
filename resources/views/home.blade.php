@@ -5,43 +5,49 @@
         <swipper-component></swipper-component>
         <main class="container">
 
-            <div class="row">
-                <div class="col-lg-6 pt-4 col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/ensuranse">ПРОИЗОШЕЛ СТРАХОВОЙ СЛУЧАЙ</a></h5>
-                            <p class="card-text">Если с вами произошел страховой случай, то оставьте нам заявку и мы
-                                перезвоним вам для уточнения подробностей.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-4 col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/contact">ОФОРМИТЬ СТРАХОВОЙ ПОЛИС</a></h5>
-                            <p class="card-text">Вы можете оформить или продлить полис по телефону или посетив один из наших
-                                филиалов.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-4 col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/contact">ПРОДЛИТЬ СТРАХОВОЙ ПОЛИС</a></h5>
-                            <p class="card-text">Вы можете оформить или продлить полис по телефону или посетив один из наших
-                                филиалов.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-4 col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="/companyWork">СТАТЬ СТРАХОВЫМ АГЕНТОМ</a></h5>
-                            <p class="card-text">Станьте страховым агентом, заполните анкету и мы с вами свяжемся в течение нескольких
-                                рабочих дней.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="row scheme-row">
+{{--                <div class="col">--}}
+{{--                    <ul class="services-list">--}}
+{{--                        <li class="services-item">--}}
+{{--                            <a href="/companyWork" class="link--overlay"></a>--}}
+{{--                            <img src="/img/become-agent.png" alt="" class="services-icon">--}}
+{{--                            <h5 class="services-title">Стать страховым агентом</h5>--}}
+{{--                            <p class="services-description">Интересная работа с выгодными условиями</p>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
+                <section class="scheme">
+                    <div class="container">
+                        <div class="scheme-content">
+                            <h3 class="scheme-title">Стать страховым агентом</h3>
+                            <ul class="scheme-list">
+                                <li class="scheme-item">
+                                    <figure class="scheme-icon"><img src="/img/icons/agent-check.svg" alt="" class="scheme-icon-img">
+                                    </figure>
+                                    <p class="scheme-description">Ознакомтесь с условиями</p>
+                                </li>
+                                <li class="scheme-item">
+                                    <figure class="scheme-icon"><img src="/img/icons/agent-doc.svg" alt="" class="scheme-icon-img">
+                                    </figure>
+                                    <p class="scheme-description">Заполните анкету или свяжитесь с нами</p>
+                                </li>
+                                <li class="scheme-item">
+                                    <figure class="scheme-icon"><img src="/img/icons/agent-done.svg" alt="" class="scheme-icon-img">
+                                    </figure>
+                                    <p class="scheme-description">Мы ответим вам в течение нескольких рабочих дней</p>
+                                </li>
+                            </ul>
+                            <a href="/companyWork" class="btn btn--primary">
+                                Перейти к вакансиям
+                            </a>
+                        </div><!-- end .scheme-content -->
+                    </div><!-- end .container -->
+                    <div class="scheme-image">
+                                <figure>
+                                    <img src="{{asset('/img/agent-become.png')}}" alt="" class="swiper-image-img">
+                                </figure>
+                    </div><!-- end .swiper-container -->
+                </section><!-- end .scheme -->
             </div>
             <div class="row mt-4">
                 <div class="col-12">

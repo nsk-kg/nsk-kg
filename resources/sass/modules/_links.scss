@@ -1,0 +1,75 @@
+
+.link--overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  opacity: 0;
+  z-index: 11;
+  cursor: pointer;
+}
+
+.link {
+  transition: $transition-primary;
+  &:focus {
+    color: #000;
+  }
+  &:hover,
+  &:active {
+    color: $color-blue;
+  }
+}
+
+.link--bordered {
+  border-bottom: 1px solid $color-gray;
+  &:hover,
+  &:active {
+    border-bottom-color: rgba($color-blue-lighter,.5);
+  }
+}
+
+.link--image {
+  transition: $transition-primary;
+  &:hover,
+  &:active {
+    opacity: .9;
+  }
+}
+
+.link--dashed {
+  border-bottom: 1px dashed rgba(#000,.2);
+  &:hover,
+  &:active {
+    border-bottom-color: rgba($color-blue-lighter,.4);
+  }
+}
+
+.link--attach {
+  position: relative;
+  margin-left: 35px;
+  border-bottom: 1px solid rgba(#000,.2);
+  &:hover,
+  &:active {
+    border-bottom-color: rgba($color-blue-lighter,.4);
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+    height: 33px;
+    position: absolute;
+    top: -7px;
+    left: -35px;
+    color: #5E6B71;
+    background-image: url("/images/icon-pdf.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.link--small {
+  font-size: 11px;
+}
