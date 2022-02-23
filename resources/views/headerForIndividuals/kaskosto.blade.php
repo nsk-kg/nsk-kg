@@ -8,10 +8,3 @@
     </div>
 
 @endsection
-
-
-{{--<script>--}}
-{{--    document.getElementById('kasko-100').onclick = e => {--}}
-{{--        alert('adasdasd')--}}
-{{--    }--}}
-{{--</script>--}}

@@ -6,16 +6,6 @@
         <main class="container">
 
             <div class="row scheme-row">
-{{--                <div class="col">--}}
-{{--                    <ul class="services-list">--}}
-{{--                        <li class="services-item">--}}
-{{--                            <a href="/companyWork" class="link--overlay"></a>--}}
-{{--                            <img src="/img/become-agent.png" alt="" class="services-icon">--}}
-{{--                            <h5 class="services-title">Стать страховым агентом</h5>--}}
-{{--                            <p class="services-description">Интересная работа с выгодными условиями</p>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
                 <section class="scheme">
                     <div class="container">
                         <div class="scheme-content">
@@ -43,9 +33,9 @@
                         </div><!-- end .scheme-content -->
                     </div><!-- end .container -->
                     <div class="scheme-image">
-                                <figure>
-                                    <img src="{{asset('/img/agent-become.png')}}" alt="" class="swiper-image-img">
-                                </figure>
+                        <figure>
+                            <img src="{{asset('/img/agent-become.png')}}" alt="" class="swiper-image-img">
+                        </figure>
                     </div><!-- end .swiper-container -->
                 </section><!-- end .scheme -->
             </div>
