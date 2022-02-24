@@ -69,6 +69,16 @@ class HomeController extends Controller
         return view('.headerAboutCompany/insblog');
     }
 
+    public function mission()
+    {
+        return view('.headerAboutCompany/mission');
+    }
+
+    public function requisites()
+    {
+        return view('.headerAboutCompany/requisites');
+    }
+
     public function interest()
     {
         return view('.headerForIndividuals/interest');

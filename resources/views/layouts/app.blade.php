@@ -218,6 +218,8 @@
                             <a class="dropdown-item" href="/insrules">Правила страхования</a>
                             <a class="dropdown-item" href="/insblog">Блог о страховании</a>
                             <a class="dropdown-item" href="/companyWork">Вакансии</a>
+                            <a class="dropdown-item" href="/mission">Миссия, ценности и принципы</a>
+                            <a class="dropdown-item" href="/requisites">Реквизиты</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown active">
@@ -345,6 +347,12 @@
                     </li>
                     <li>
                         <a href="/contact">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="/requisites">Реквизиты</a>
+                    </li>
+                    <li>
+                        <a href="/companyWork">Вакансии</a>
                     </li>
                 </ul>
 

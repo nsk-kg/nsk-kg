@@ -71,7 +71,5 @@ Route::get('/insblog', 'HomeController@insblog')->name('insblog');
 Route::get('/interest', 'HomeController@interest')->name('interest');
 Route::get('/kaskosto', 'HomeController@kaskosto')->name('kaskosto');
 Route::get('/becomeagent', 'HomeController@becomeagent')->name('becomeagent');
-
-
-
-
+Route::get('/mission', 'HomeController@mission')->name('mission');
+Route::get('/requisites', 'HomeController@requisites')->name('requisites');

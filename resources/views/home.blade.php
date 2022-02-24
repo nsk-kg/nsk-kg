@@ -33,9 +33,9 @@
                         </div><!-- end .scheme-content -->
                     </div><!-- end .container -->
                     <div class="scheme-image">
-                        <figure>
-                            <img src="{{asset('/img/agent-become.png')}}" alt="" class="swiper-image-img">
-                        </figure>
+                                <figure>
+                                    <img src="{{asset('/img/agent-become.png')}}" alt="" class="swiper-image-img">
+                                </figure>
                     </div><!-- end .swiper-container -->
                 </section><!-- end .scheme -->
             </div>
@@ -242,8 +242,6 @@
                     </div>
                 </div>
             </div>
-
-
         </main>
     </div>
 
