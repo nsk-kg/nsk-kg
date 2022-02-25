@@ -105,7 +105,7 @@
     </a>
 
     <a class="social-contacts-item"
-       href="tg://resolve?domain=&text=Здравствуйте." target="_blank"
+       href="tg://resolve?domain=nsk_insurance&text=Здравствуйте." target="_blank"
        id="cl-telegram">
         <img src="/img/socials-widget/telegram-logo.svg" height="45px" width="45px">
     </a>
