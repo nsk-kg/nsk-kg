@@ -17,9 +17,11 @@
                 <div id="collapseThree8" class="collapse show" aria-labelledby="headingThree8" data-parent="#accordionExample">
                     <div class="card-body">
                         <ul>
-                            <li><a href="/upload/Бух баланс за 2017 г с отметкой ГНИ.PDF">Бух баланс за 2017 г с отметкой ГНИ</a></li>
-                            <li><a href="/upload/Бухбаланс за 2018 г..PDF">Бухбаланс за 2018 г.</a></li>
-                            <li><a href="/upload/Баланс за декабрь 2019.pdf">Баланс за декабрь 2019</a></li>
+                            <li><a href="/upload/Бух баланс за 2017 г с отметкой ГНИ.PDF" target="_blank">Бухгалтерский баланс за 2017 год</a></li>
+                            <li><a href="/upload/Бухбаланс за 2018 г..PDF" target="_blank">Бухгалтерский баланс за 2018 год</a></li>
+                            <li><a href="/upload/Баланс за декабрь 2019.pdf" target="_blank">Бухгалтерский баланс за 2019 год</a></li>
+                            <li><a href="/upload/Бух.Баланс за 2020г..pdf" target="_blank">Бухгалтерский баланс за 2020 год</a></li>
+                            <li><a href="/upload/Бух. Баланс на 31.12.2021г.pdf" target="_blank">Бухгалтерский баланс за 2021 год</a></li>
                         </ul>
                     </div>
                 </div>

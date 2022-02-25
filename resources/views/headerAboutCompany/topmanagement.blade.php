@@ -74,7 +74,7 @@
             <div class="manager-meta">
                 <div class="manager-name">Турдумбекова Чолпон Кушчубековна</div>
 
-                <div class="manager-position">Член Правления ЗАО «НСК»</div>
+                <div class="manager-position">Главный бухгалтер - Член Правления ЗАО «НСК»</div>
             </div>
 
             <div class="manager-description">
