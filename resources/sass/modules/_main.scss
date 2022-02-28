@@ -77,6 +77,11 @@
     width: 100% !important;
 }
 
+@media (max-width: 1100px) {
+    .table-gruz {
+        display: none;
+    }
+}
 /* БЛОК С ОФИСАМИ НА ГЛАВНОЙ СТРАНИЦЕ */
 
 .office-block {
@@ -117,7 +122,71 @@ a, span {
     color: inherit;
 }
 
-/* НОМЕРА ТЕЛЕФОНОВ НА ГЛАВНОЙ СТРАНИЦЕ */
+/* BOOTSTRAP FIX */
+@media (min-width: 1200px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1190px;
+    }
+}
+
+/* HEADER STYLES*/
+.pull-left {
+    float: left;
+    padding-right: 10px;
+    margin-right: 0.3em;
+}
+
+.pull-left-more {
+    margin-left: 3rem;
+}
+
+.header {
+    padding: 12px 0 12px;
+    background-color: #fff;
+    height: 84px;
+    &.is-calc-travel {
+        z-index: 101;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .nav--primary {
+        display: flex;
+        align-items: center;
+        @media all and (max-width: 1600px) {
+            align-items: flex-start;
+            padding-top: 7px;
+        }
+        .nav-list {
+            white-space: nowrap;
+            .nav-link {
+                @media all and (max-width: 1600px) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .widgets {
+        display: none;
+        @media all and (max-width: 680px) {
+            display: block;
+        }
+    }
+    .tel-icon {
+        display: none;
+        @media all and (max-width: 680px) {
+            display: block;
+        }
+    }
+    figure {
+        margin: 0;
+        height: 50%;
+    }
+}
+
 .numbers-header {
     font-size: 12px;
     display: flex;
@@ -132,11 +201,4 @@ a, span {
     height: 30px;
     display: inline-block;
     margin-right: 12px;
-}
-
-/* BOOTSTRAP FIX */
-@media (min-width: 1200px) {
-    .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1190px;
-    }
 }

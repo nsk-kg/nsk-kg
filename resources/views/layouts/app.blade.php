@@ -73,12 +73,6 @@
             -webkit-transition-delay: .1s;
             transition-delay: .1s;
         }
-
-        .header {
-            z-index: 3;
-            width: 100%;
-        }
-
     </style>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -110,109 +104,276 @@
         <img src="/img/socials-widget/telegram-logo.svg" height="45px" width="45px">
     </a>
 </div>
-<div id="" class="header fixed-top ">
-    <nav class="navbar navbar-expand-xl navbar-light bg-white shadow-sm">
-        <div class="container">
-                <div class="mt-2"><a href="/"><img src="{{ asset('img/logo.svg')  }}" width="140" height="60"></a></div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            О компании
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/company">О компании</a>
-                            <a class="dropdown-item" href="/topmanagement">Топ менеджмент</a>
-                            <a class="dropdown-item" href="/finances">Финансовые показатели</a>
-                            <a class="dropdown-item" href="/reinsurance">Перестрахование</a>
-                            <a class="dropdown-item" href="/insrules">Правила страхования</a>
-                            <a class="dropdown-item" href="/insblog">Блог о страховании</a>
-                            <a class="dropdown-item" href="/companyWork">Вакансии</a>
-                            <a class="dropdown-item" href="/mission">Миссия, ценности и принципы</a>
-                            <a class="dropdown-item" href="/requisites">Реквизиты</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Физическим лицам
-                        </a>
-                        <div class="dropdown-menu big" aria-labelledby="navbarDropdown">
-                            <div class="dropdown-item-block">
-                                <div class="pl-3"><b>АВТОМОБИЛЬ</b></div>
-                                <a class="dropdown-item" href="/kasko">Страхование транспорта</a>
-                                <a class="dropdown-item" href="/interest">Обоюдный интерес</a>
-                                <a class="dropdown-item" href="/kaskosto">КАСКО за 100</a>
-                                <div class="dropdown-divider"></div>
-                                <div class="pl-3"><b>ПУТЕШЕСТВИЯ</b></div>
-                                <a class="dropdown-item" href="/savepersontravel">ВОКРУГ СВЕТА</a>
-                                <a class="dropdown-item" href="/medic">ДМС КР для въезжающих в КР</a>
-                            </div>
-                            <div class="dropdown-item-block">
-                                <div class="dropdown-divider"></div>
-                                <div class="pl-3"><b>ЖИЗНЬ И ЗДОРОВЬЕ</b></div>
-                                <a class="dropdown-item" href="/ns">Страхование детей от несчастных случаев (Балалык)</a>
-                                <a class="dropdown-item" href="/ns">Страхование от несчастных случаев (Саламат)</a>
-                                <div class="dropdown-divider"></div>
-                                <div class="pl-3"><b>ИМУЩЕСТВО</b></div>
-                                <a class="dropdown-item" href="/savehome">Страхование домов</a>
-                                <a class="dropdown-item" href="/savehome">Страхование квартир</a>
-                                <a class="dropdown-item" href="/savehome">Страхование дач и загородных домов</a>
-                                <a class="dropdown-item" href="/savehome">Ответственность перед соседями</a>
-                                <a class="dropdown-item" href="/savehome">Уютный дом</a>
-                                <a class="dropdown-item" href="/savehome">Комфорт</a>
-                                <a class="dropdown-item" href="/savehome">Залоговое имущество</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Корпоративным клиентам
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="pl-3"><b>ИМУЩЕСТВО</b></div>
-                            <a class="dropdown-item" href="/saveur">Недвижимое имущество</a>
-                            <a class="dropdown-item" href="/saveur">Движимое  имущество</a>
-                            <a class="dropdown-item" href="/saveur">Залоговое  имущество</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="pl-3"><b>АВТОПАРК</b></div>
-                            <a class="dropdown-item" href="/autour">КАСКО</a>
-                            <a class="dropdown-item" href="/autour">ДСАГО</a>
-                            <a class="dropdown-item" href="/autour">Места в авто ТС</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="pl-3"><b>ПРОЧЕЕ</b></div>
-                            <a class="dropdown-item" href="/gruz">Грузы</a>
-                            <a class="dropdown-item" href="#">Строительно-монтажные работы</a>
-                            <div class="dropdown-divider"></div>
-                            <div class="pl-3"><b>СОТРУДНИКИ</b></div>
-                            <a class="dropdown-item" href="#">ДМС</a>
-                            <a class="dropdown-item" href="#">НС</a>
-                            <a class="dropdown-item" href="/nsur">ОСГОР</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown active">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Обязательное страхование
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/otwork">Ответственности работодателя</a>
-                            <a class="dropdown-item" href="/obot">Ответственности организаций предприятий повышенной опасности </a>
-                            <a class="dropdown-item" href="/obsave">Ответственности перевозчиков опасных грузов</a>
-                            <a class="dropdown-item" href="/savepep">Ответственности перевозчиков пассажиров</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="numbers-header">
-                <ul>
+<header id="" class="header fixed-top shadow-sm">
+    <div class="container container--header">
+        <figure class="logo">
+            <a href="/">
+                <img src="/img/logo.svg" alt="NSK.KG">
+            </a>
+        </figure>
+        <nav class="nav nav--primary" id="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">О компании</a>
+                    <div class="submenu" style="padding-bottom: 60px; width: 100vw; left:0; display: none;">
+                        <div class="container submenu-container">
+                            <div class="menu-section">
+                                <div class="col-row col-row--lg clearfix">
+                                    <div class="col--lg col--row-lg pull-left">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/company" class="link" style="pointer-events: none">
+                                                    О компании
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/company" class="link">О компании</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/topmanagement" class="link">Топ менеджмент</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/companyWork" class="link">Вакансии</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/mission" class="link">Миссия, ценности и принципы</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/requisites" class="link">Реквизиты</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                    </div><!-- end .col-lg -->
+                                    <div class="col--lg col--row-lg pull-left pull-left-more">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/company" class="link" style="pointer-events: none">
+                                                    Дополнительная информация
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/finances" class="link">Финансовые показатели</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/insrules" class="link">Правила страхования</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/reinsurance" class="link">Перестрахование</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/insblog" class="link">Блог о страховании</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                    </div><!-- end .col-lg -->
+                                </div><!-- end .col-row -->
+                            </div><!-- end .menu-section -->
+                        </div><!-- end .container -->
+                    </div><!-- end .submenu -->
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Физическим лицам</a>
+                    <div class="submenu" style="padding-bottom: 60px; width: 100vw; left:0; display: none;">
+                        <div class="container submenu-container">
+                            <div class="menu-section">
+                                <div class="col-row col-row--lg clearfix">
+                                    <div class="col--lg col--row-lg pull-left">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/" class="link" style="pointer-events: none">
+                                                    Автомобиль
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/kasko" class="link">Страхование транспорта</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/interest" class="link">Обоюдный интерес</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/kaskosto" class="link">КАСКО за 100</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                        <figure class="menu-avatar"><img src="/img/menu_kasko.png" alt="">
+                                        </figure>
+                                    </div><!-- end .col-lg -->
+                                    <div class="col--lg col--row-lg pull-left">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/ru/#" class="link" style="pointer-events: none">
+                                                    Путешествия
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/savepersontravel" class="link">ВОКРУГ СВЕТА</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/medic" class="link">ДМС КР для въезжающих в КР</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                        <figure class="menu-avatar">
+                                            <img src="/img/menu_travel.png" alt="" height="117px" style="margin-top: 28px">
+                                        </figure>
+                                    </div><!-- end .col-lg -->
+                                    <div class="col--lg col--row-lg pull-left">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/ru/#" class="link" style="pointer-events: none">
+                                                    Жизнь и здоровье
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/ns" class="link">Страхование детей от несчастных случаев (Балалык)</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/ns" class="link">Страхование от несчастных случаев (Саламат)</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                        <figure class="menu-avatar">
+                                            <img src="/img/menu_health.png" alt="" height="117px" style="margin-top: 28px">
+                                        </figure>
+                                    </div><!-- end .col-lg -->
+                                    <div class="col--lg col--row-lg pull-left">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/ru/#" class="link" style="pointer-events: none">
+                                                    Имущество
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/savehome" class="link">Страхование домов</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/savehome" class="link">Страхование квартир</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/savehome" class="link">Страхование дач и загородных домов</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/savehome" class="link">Ответственность перед соседями</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/savehome" class="link">Уютный дом</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/savehome" class="link">Комфорт</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/savehome" class="link">Залоговое имущество</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                    </div><!-- end .col-lg -->
+                                </div><!-- end .col-row -->
+                            </div><!-- end .menu-section -->
+                        </div><!-- end .container -->
+                    </div><!-- end .submenu -->
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Корпоративным клиентам</a>
+                    <div class="submenu" style="width: 100vw; left:0; display: none;">
+                        <div class="container submenu-container">
+                            <div class="menu-section">
+                                <div class="col-row col-row--lg clearfix">
+                                    <div class="col--lg col--row-lg pull-left">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/" class="link" style="pointer-events: none">
+                                                    Имущество
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/saveur" class="link">Недвижимое имущество</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/saveur" class="link">Движимое имущество</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/saveur" class="link">Залоговое имущество</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                        <figure class="menu-avatar"><img src="/img/menu_estate.png" alt="">
+                                        </figure>
+                                    </div><!-- end .col-lg -->
+                                    <div class="col--lg col--row-lg pull-left pull-left-more">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/ru/#" class="link" style="pointer-events: none">
+                                                    Автопарк
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/autour" class="link">КАСКО</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/autour" class="link">ДСАГО</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/autour" class="link">Места в авто ТС</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                        <figure class="menu-avatar">
+                                            <img src="/img/menu_park.png" alt="" width="241px" style="margin-top: 48px">
+                                        </figure>
+                                    </div><!-- end .col-lg -->
+                                    <div class="col--lg col--row-lg pull-left pull-left-more">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/ru/#" class="link" style="pointer-events: none">
+                                                    Прочее
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/gruz" class="link">Грузы</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/" class="link">Строительно-монтажные работы</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                        <figure class="menu-avatar">
+                                            <img src="/img/menu_gruz.png" alt="" height="117px" style="margin-top: 64px">
+                                        </figure>
+                                    </div><!-- end .col-lg -->
+                                    <div class="col--lg col--row-lg pull-left pull-left-more">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/ru/#" class="link" style="pointer-events: none">
+                                                    Сотрудники
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/" class="link">ДМС</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/" class="link">НС</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/nsur" class="link">ОСГОР</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                        <figure class="menu-avatar">
+                                            <img src="/img/menu_other.png" alt="" height="117px" style="margin-top: 34px">
+                                        </figure>
+                                    </div><!-- end .col-lg -->
+                                </div><!-- end .col-row -->
+                            </div><!-- end .menu-section -->
+                        </div><!-- end .container -->
+                    </div><!-- end .submenu -->
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Обязательное страхование</a>
+                    <div class="submenu" style="padding-bottom: 60px; width: 100vw; left:0; display: none;">
+                        <div class="container submenu-container">
+                            <div class="menu-section">
+                                <div class="col-row col-row--lg clearfix">
+                                    <div class="col--lg col--row-lg pull-left">
+                                        <div class="menu-block">
+                                            <h4 class="menu-block-title">
+                                                <a href="/" class="link" style="pointer-events: none">
+                                                    Ответственности
+                                                </a>
+                                            </h4>
+                                            <ul class="menu-block-list">
+                                                <li class="menu-block-list-item"><a href="/otwork" class="link">Ответственности работодателя</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/obot" class="link">Ответственности организаций предприятий повышенной опасности</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/obsave" class="link">Ответственности перевозчиков опасных грузов</a>
+                                                </li>
+                                                <li class="menu-block-list-item"><a href="/savepep" class="link">Ответственности перевозчиков пассажиров</a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- end .menu-block -->
+                                    </div><!-- end .col-lg -->
+                                </div><!-- end .col-row -->
+                            </div><!-- end .menu-section -->
+                        </div><!-- end .container -->
+                    </div><!-- end .submenu -->
+                </li>
+                <ul class="nav-item-list">
                     <li>
                         <a href="tel:+996 312 644 555">+996 312 644 555</a>
                     </li>
@@ -223,11 +384,28 @@
                         <a href="tel:+996 555 904 888">+996 555 904 888</a>
                     </li>
                 </ul>
-            </div>
+            </ul>
+        </nav>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <div class="numbers-header">
+            <ul style="width: 102px">
+                <li>
+                    <a href="tel:+996 312 644 555">+996 312 644 555</a>
+                </li>
+                <li>
+                    <a href="tel:+996 777 904 888">+996 777 904 888</a>
+                </li>
+                <li>
+                    <a href="tel:+996 555 904 888">+996 555 904 888</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-</div>
-
+    </div>
+</header>
 @yield('content')
 
 <!-- Footer -->

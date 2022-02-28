@@ -1,0 +1,115 @@
+
+.menu-section {
+  .title--section {
+    margin-bottom: 30px;
+  }
+  + .menu-section {
+    margin-top: 50px;
+  }
+  .col-row {
+    margin-bottom: 0;
+  }
+}
+
+.menu-block {
+  + .menu-block {
+    margin-top: 30px;
+  }
+}
+
+.menu-block-title {
+  margin-bottom: 18px;
+  font-family: $font-primary-500;
+  font-size: 16px;
+  &.active {
+    color: $color-blue;
+    .link {
+      pointer-events: none;
+      border-bottom-color: transparent;
+    }
+  }
+  .link {
+    display: inline;
+    line-height: 1;
+    border-bottom: 1px solid rgba($color-gray,.4);
+    -webkit-backface-visibility: hidden;
+    &:hover,
+    &:active {
+      border-bottom-color: rgba($color-blue-lighter,.3);
+    }
+  }
+  &.is-static {
+    // display: inline;
+    // line-height: 1;
+  }
+}
+
+.menu-block-list-item {
+  font-family: $font-primary-300;
+  font-size: 14px;
+  opacity: 1;
+  + .menu-block-list-item {
+    margin-top: 15px;
+  }
+  &.active {
+    color: $color-blue;
+    .link {
+      pointer-events: none;
+      border-bottom-color: transparent;
+    }
+  }
+  .link {
+    display: inline;
+    line-height: 1;
+    border-bottom: 1px solid rgba($color-gray,.4);
+    &:hover,
+    &:active {
+      border-bottom-color: rgba($color-blue-lighter,.3);
+    }
+  }
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 46px;
+  left: 0;
+  width: 100%;
+  padding: 60px 0 0;
+  background-color: #fff;
+  box-shadow: 0px 16px 16px 0px rgba(0,5,7,0.30);
+  overflow: hidden;
+  z-index: 111;
+  .menu-block-title {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: rgba(#000,.5);
+    text-transform: uppercase;
+  }
+  .col--lg {
+    margin-right: 10px;
+  }
+  .menu-avatar {
+    margin-top: 30px;
+      text-align: center;
+  }
+}
+
+.col--automobile {
+  position: relative;
+  .menu-avatar {
+    position: absolute;
+    top: calc(100% - 10px);
+    left: -220px;
+  }
+}
+
+.col--travel {
+  position: relative;
+  .menu-avatar {
+    position: absolute;
+    top: calc(100% + 70px);
+    left: 0;
+  }
+}
