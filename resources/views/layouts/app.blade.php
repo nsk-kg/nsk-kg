@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'www.nsk.kg') }}</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
 
     <style>
         @font-face {
@@ -75,7 +75,7 @@
         }
     </style>
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div class="social-contacts" id="social-body">
