@@ -23,15 +23,18 @@ let subMenuInit = function () {
         currentItem = $(this);
         hasSubmenu = currentItem.find('.submenu').length ? true : false;
         currentSubmenu = currentItem.find('.submenu');
+        currentLink = currentItem.find('.nav-link');
         if (!currentItem.hasClass('is-hovered') && hasSubmenu) {
             showSubMenu = setTimeout(function () {
                 positionSubMenu();
+                currentLink.css('color', '#0098df');
                 currentItem.addClass('is-hovered');
                 currentSubmenu.fadeIn(200);
             }, 300);
         }
     }).on('mouseleave', function () {
         clearTimeout(showSubMenu);
+        currentLink.css('color', 'inherit');
         currentItem.removeClass('is-hovered');
         currentSubmenu.fadeOut(100);
     });
