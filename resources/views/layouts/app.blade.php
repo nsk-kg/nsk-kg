@@ -87,13 +87,13 @@
         <img src="/img/socials-widget/phone-call.svg" height="30px" width="30px">
     </a>
 
-    <a class="social-contacts-item tooltipimg" href="https://wa.me/+996558954888?text=Здравствуйте."
+    <a class="social-contacts-item tooltipimg" href="https://wa.me/+996777904888?text=Здравствуйте."
        target="_blank" id="cl-whatsapp">
         <img src="/img/socials-widget/callback.png" class="" height="45px" width="45px">
-        <span class="tooltiptext">Аварийный комиссар</span>
+        <span class="tooltiptext">Консультация</span>
     </a>
 
-    <a class="social-contacts-item" href="https://wa.me/0555904888?text=Здравствуйте."
+    <a class="social-contacts-item" href="https://wa.me/+996777904888?text=Здравствуйте."
        target="_blank" id="cl-whatsapp">
         <img src="/img/socials-widget/whatsapp-logo.svg" height="50px" width="50px">
     </a>
