@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'www.nsk.kg') }}</title>
+    <title>{{ config('app.name', 'Страховая компания ЗАО «НСК»') }}</title>
     <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
     <script src="{{ mix('js/app.js') }}" defer></script>
 
