@@ -326,7 +326,7 @@
 
     </style>
 
-    <main class="vacancy-page">
+    <main class="vacancy-page" id="app">
         <div class="row">
             <div class="col-md-12 top-img-container">
                 <div class="img_text">
