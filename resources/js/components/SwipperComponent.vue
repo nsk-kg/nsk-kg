@@ -3,16 +3,19 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active w-100"
-                     style="background-image:url('/img/2.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center center;height:625px">
+                     style="background-image:url('/img/main-photo.jpg');  background-repeat: no-repeat;background-size: cover;background-position: center center;height:625px">
                     <div class="container">
-                        <div class="row pt-5 mt-5" style="color:#fff">
+                        <div class="row pt-5 mt-5" style="color: black">
                             <div class="col-12">
                                 <p class="display-sm-4">
-                                    Нам 15 лет!
+                                    15 лет успешной работы <br>
+                                    на страховом рынке <br>
+                                    Кыргызской Республики!
                                 </p>
                                 <p class="lead">
-                                    Мы сделаем все возможное, чтобы ваше пребывание <br>
-                                    за рубежом принесло вам только положительные эмоции!
+                                    Каждый день нас преследуют непредвиденные ситуации. <br>
+                                    Мы хотим, чтобы вы и ваше имущество были <br>
+                                    всегда защищены от влияния внешних факторов.
                                 </p>
 
                             </div>
