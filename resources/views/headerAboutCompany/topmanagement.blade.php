@@ -60,7 +60,7 @@
             <div class="manager-meta">
                 <div class="manager-name">Рыспеков Бектурат Рыспекович</div>
 
-                <div class="manager-position">Заместитель Председателя Правления ЗАО «НСК»</div>
+                <div class="manager-position">Управляющий Директор ЗАО «НСК»</div>
             </div>
 
             <div class="manager-description">
